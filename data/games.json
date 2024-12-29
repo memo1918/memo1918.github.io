@@ -1,0 +1,28 @@
+{
+    "project1": {
+        "title": "Project 1",
+        "description": "Detailed information about Project 1.",
+        "details": "This project is about...",
+        "image": "https://placehold.co/80",
+        "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12263161?color=000000\" allowfullscreen=\"\" width=\"720\" height=\"540\"><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>"
+    },
+    "project2": {
+        "title": "Project 2",
+        "description": "Detailed information about Project 2.",
+        "details": "This project is about...",
+        "image": "https://placehold.co/80"
+        
+    },
+    "project3": {
+        "title": "Project 3",
+        "description": "Detailed information about Project 3.",
+        "details": "This project is about...",
+        "image": "https://placehold.co/80"
+    },
+    "project4": {
+        "title": "Project 4",
+        "description": "Detailed information about Project 4.",
+        "details": "This project is about...",
+        "image": "https://placehold.co/80"
+    }
+}

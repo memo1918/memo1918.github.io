@@ -5,24 +5,29 @@ document.addEventListener('DOMContentLoaded', function() {
     const backButton = document.getElementById('back-button');
 
 
+    // const template = `
+    // <div>
+    // {{iframe}}
+    // </div>
+    // <h1> {{title}} </h1>
+    // <h3> Project Description?</h3>
+    // <br>    
+    // <div class="text"><p>{{description}}</p></div>
+    // <br><br>
+    // <h3> Details</h3>
+    // <br>
+    // <div class="text"><p>{{details}}</p></div>`;
+
     const template = `
-    <h1> {{title}} </h1>
-    <div class="image"><img src="{{image}}" alt="Placeholder Image"> </div>
-    <br><br>
-    <h3> Project Description?</h3>
-    <br>    
-    <div class="text"><p>{{description}}</p></div>
-    <br><br>
-    <h3> Details</h3>
-    <br>
-    <div class="text"><p>{{details}}</p></div>`;
+    {{iframe}}
+    `;
 
     const colors = ["#cb680bcf","#7c35decf","#d63605cf","#2ec4b5dc"];
 
     let projects = {};
 
     function loadProjects() {
-        fetch('../data/projects.json')
+        fetch('../data/games.json')
             .then(response => response.json())
             .then(data => {
                 projects = data;
@@ -36,11 +41,12 @@ document.addEventListener('DOMContentLoaded', function() {
     function loadProjectDetails(projectId) {
         const project = projects[projectId];
         if (project) {
+
             const content = template
-                .replace('{{title}}', project.title)
-                .replace('{{description}}', project.description)
-                .replace('{{details}}', project.details)
-                .replace('{{image}}', project.image);
+                // .replace('{{title}}', project.title)
+                // .replace('{{description}}', project.description)
+                // .replace('{{details}}', project.details)
+                .replace('{{iframe}}', project.iframe);
             projectContent.innerHTML = content;
             projectList.style.display = 'none';
             projectDetails.style.display = 'block';
