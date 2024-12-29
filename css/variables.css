@@ -4,7 +4,15 @@
     --primary-color-hover: #6930c3; 
     --primary-color-active: #5a24a8;
     --secondary-color: #d63605;
+    --secondary-color-hover: #c92e04;
+    --secondary-color-active: #b82a03;
     --accent-color: #cb680b;
+
+    --button-warning-color: #E5D4CE;
+    --button-warning-color-hover: #D1B8A7;
+    --button-warning-color-active: #C4A693;
+
+
 
     --grey-button: #fcfaffcd;
     --grey-button-hover: #c4c4c4c6;

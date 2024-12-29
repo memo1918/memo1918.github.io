@@ -2,8 +2,8 @@
 
 .btn-primary {
     background-color: var(--primary-color) !important;
-    border-color: var(--primary-color) !important;
     color: #fff !important;
+    border: none !important;
     outline: none !important;
     backdrop-filter: blur(10px);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -12,17 +12,15 @@
 
 .btn-primary:hover {
     background-color: var(--primary-color-hover) !important;
-    border-color: var(--primary-color-hover) !important;
 }
 
 .btn-primary:active, .btn-primary:focus {
     background-color: var(--primary-color-active) !important;
-    border-color: var(--primary-color-active) !important;
 }
 
 .btn-secondary {
     background-color: var(--grey-button) !important;
-    border-color: var(--grey-button) !important;
+    border: none !important;
     color: #000000 !important;
     outline: none !important;
     backdrop-filter: blur(4px);
@@ -32,12 +30,42 @@
 
 .btn-secondary:hover {
     background-color: var(--grey-button-hover) !important;
-    border-color: var(--grey-button-hover) !important;
 }
 
 .btn-secondary:active, .btn-secondary:focus {
     background-color: var(--grey-button-active) !important;
-    border-color: var(--grey-button-active) !important;
+}
+
+.btn-danger{
+    background-color: var(--secondary-color) !important;
+    border: none !important;
+    color: #fff !important;
+    outline: none !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-danger:hover {
+    background-color: var(--secondary-color-hover) !important;
+}
+
+.btn-danger:active, .btn-danger:focus {
+    background-color: var(--secondary-color-active) !important;
+}
+
+.btn-warning{
+    background-color: var(--button-warning-color) !important;
+    border: none !important;
+    color: black !important;
+    outline: none !important;
+    backdrop-filter: blur(10px);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+.btn-warning:hover {
+    background-color: var(--button-warning-color-hover) !important;
+}
+.btn-warning:active, .btn-warning:focus {
+    background-color: var(--button-warning-color-active) !important;
 }
 
 .accordion-button::after {
