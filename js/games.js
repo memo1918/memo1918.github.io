@@ -1,67 +1,61 @@
 document.addEventListener('DOMContentLoaded', function() {
-    const projectList = document.getElementById('project-list');
-    const projectDetails = document.getElementById('project-details');
-    const projectContent = document.getElementById('project-content');
-    const backButton = document.getElementById('back-button');
+    const gameList = document.getElementById('game-list');
+    const gameDetails = document.getElementById('game-details');
+    const gameIframe = document.getElementById('game-iframe');
+    const leftBox = document.getElementById('left-box');
+    const rightBox = document.getElementById('right-box');
+    const bottomBox = document.getElementById('bottom-box');
 
-
-    // const template = `
-    // <div>
-    // {{iframe}}
-    // </div>
-    // <h1> {{title}} </h1>
-    // <h3> Project Description?</h3>
-    // <br>    
-    // <div class="text"><p>{{description}}</p></div>
-    // <br><br>
-    // <h3> Details</h3>
-    // <br>
-    // <div class="text"><p>{{details}}</p></div>`;
-
-    const template = `
-    {{iframe}}
-    `;
 
     const colors = ["#cb680bcf","#7c35decf","#d63605cf","#2ec4b5dc"];
 
-    let projects = {};
+    let games = {};
 
-    function loadProjects() {
+    function loadGames() {
         fetch('../data/games.json')
             .then(response => response.json())
             .then(data => {
-                projects = data;
+                games = data;
                 initializePage();
             })
-            .catch(error => console.error('Error loading projects:', error));
+            .catch(error => console.error('Error loading games json:', error));
     }
     
 
     // loads the project details based on the project id
-    function loadProjectDetails(projectId) {
-        const project = projects[projectId];
-        if (project) {
-
-            const content = template
-                // .replace('{{title}}', project.title)
-                // .replace('{{description}}', project.description)
-                // .replace('{{details}}', project.details)
-                .replace('{{iframe}}', project.iframe);
-            projectContent.innerHTML = content;
-            projectList.style.display = 'none';
-            projectDetails.style.display = 'block';
+    function loadGameDetails(gameId) {
+        const game = games[gameId];
+        if (game) {
+            if (game.iframe != ""){
+                const iframeHeight = Math.min(window.innerHeight * 0.7, 720);
+                const iframeWidth = iframeHeight / 1.027; // Maintain a 1:1 aspect ratio
+                const iframe = game.iframe.replace('width=""', `width="${iframeWidth}"`)
+                                             .replace('height=""', `height="${iframeHeight}"`);
+    
+                
+                gameIframe.innerHTML = iframe;
+                leftBox.innerHTML += `<h4>Rules</h4> <p>${game.rules}</p>`;
+                leftBox.style.display = 'block';
+                rightBox.innerHTML += `<h4>How to Play</h4> <p>${game.howto}</p>`;
+                rightBox.style.display = 'block';
+                
+            }
+            
+            bottomBox.innerHTML = `<h4>${game.title}</h4><p>${game.details}</p>`;
+            gameList.style.display = 'none';
+            gameDetails.style.display = 'block';
         }
     }
 
     // takes back to the project list
-    function showProjectList() {
-        projectList.style.display = 'block';
-        projectDetails.style.display = 'none';
+    function showGameList() {
+        gameList.style.display = 'block';
+        gameDetails.style.display = 'none';
     }
 
-    function createProjectCard(projectId, project) {
+    function createGameCard(gameId, game) {
 
-        const colorIndex = Object.keys(projects).indexOf(projectId) % colors.length;
+        const colorIndex = Object.keys(games).indexOf(gameId) % colors.length;
         const color = colors[colorIndex];
         
         return `
@@ -70,44 +64,41 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="col-8">
                         <div class="compact-box d-flex align-items-center" style="background-color: ${color}; color: white;">
                             <div class="compact-image">
-                                <img src="${project.image}" alt="Placeholder Image"> </div>
+                                <img src="${game.image}" alt="Placeholder Image"> </div>
                             <div class="compact-text ms-3">
-                                <h4>${project.title}</h4>
-                                <p>${project.description}</p> </div>
+                                <h4>${game.title}</h4>
+                                <p>${game.description}</p> </div>
                             <div>
-                                <a href="#${projectId}"> <button class="btn btn-warning">Project Details</button></a>
+                                <button class="btn btn-warning" onclick="location.href='#${gameId}'" >Game Details</button>
                             </div></div></div></div></div>`;
     }
 
     function initializePage() {
         window.addEventListener('hashchange', function() {
             const hash = window.location.hash.substring(1);
-            if (hash && projects[hash]) {
-                loadProjectDetails(hash);
+            if (hash && games[hash]) {
+                loadGameDetails(hash);
             } else {
-                showProjectList();
+                showGameList();
             }
         });
 
-        backButton.addEventListener('click', function() {
-            window.location.hash = '';
-        });
 
         const initialHash = window.location.hash.substring(1);
-        if (initialHash && projects[initialHash]) {
-            loadProjectDetails(initialHash);
+        if (initialHash && games[initialHash]) {
+            loadGameDetails(initialHash);
         } else {
-            showProjectList();
+            showGameList();
         }
 
         // Generate project cards
-        for (const projectId in projects) {
-            if (projects.hasOwnProperty(projectId)) {
-                projectList.innerHTML += createProjectCard(projectId, projects[projectId]);
+        for (const gameId in games) {
+            if (games.hasOwnProperty(gameId)) {
+                gameList.innerHTML += createGameCard(gameId, games[gameId]);
             }
         }
     }
 
-    loadProjects();
+    loadGames();
 
 });

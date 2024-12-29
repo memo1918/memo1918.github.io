@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                                 <h4>${project.title}</h4>
                                 <p>${project.description}</p> </div>
                             <div>
-                                <a href="#${projectId}"> <button class="btn btn-warning">Project Details</button></a>
+                                <button class="btn btn-warning" onclick="location.href='#${projectId}'">Project Details</button>
                             </div></div></div></div></div>`;
     }
 

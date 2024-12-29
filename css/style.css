@@ -1,7 +1,7 @@
 @import url('variables.css');
 
 /* * {
-    outline: 3px solid red;
+    outline: 2px solid red;
   } */
 
 
@@ -13,6 +13,7 @@
     font-weight: 500;
     line-height: 16px;
     word-wrap: break-word ;
+
 }
 
 .background-container {

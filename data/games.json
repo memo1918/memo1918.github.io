@@ -1,28 +1,39 @@
 {
-    "project1": {
-        "title": "Project 1",
-        "description": "Detailed information about Project 1.",
-        "details": "This project is about...",
+    "game1": {
+        "title": "Game of Life",
+        "description": "Detailed information about Game 1.",
+        "details": "This game is about...",
         "image": "https://placehold.co/80",
-        "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12263161?color=000000\" allowfullscreen=\"\" width=\"720\" height=\"540\"><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>"
+        "rules":"rules of the game",
+        "howto": "how to play the game",
+        "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12263161?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\"><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>"
     },
-    "project2": {
-        "title": "Project 2",
-        "description": "Detailed information about Project 2.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80"
+    "game2": {
+        "title": "game 2",
+        "description": "Detailed information about game 2.",
+        "details": "This game is about...",
+        "image": "https://placehold.co/80",
+        "rules":"rules of the game",
+        "howto": "how to play the game",
+        "iframe": ""
         
     },
-    "project3": {
-        "title": "Project 3",
-        "description": "Detailed information about Project 3.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80"
+    "game3": {
+        "title": "game 3",
+        "description": "Detailed information about game 3.",
+        "details": "This game is about...",
+        "image": "https://placehold.co/80",
+        "rules":"rules of the game",
+        "howto": "how to play the game",
+        "iframe": ""
     },
-    "project4": {
-        "title": "Project 4",
-        "description": "Detailed information about Project 4.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80"
+    "game4": {
+        "title": "game 4",
+        "description": "Detailed information about game 4.",
+        "details": "This game is about...",
+        "image": "https://placehold.co/80",
+        "rules":"rules of the game",
+        "howto": "how to play the game",
+        "iframe": ""
     }
 }
