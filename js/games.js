@@ -34,9 +34,10 @@ document.addEventListener('DOMContentLoaded', function() {
     
                 
                 gameIframe.innerHTML = iframe;
-                leftBox.innerHTML += `<h4>Rules</h4> <p>${game.rules}</p>`;
+                leftBox.innerHTML += `<h3>Rules</h3> <p>${game.rules}</p>`;
                 leftBox.style.display = 'block';
-                rightBox.innerHTML += `<h4>How to Play</h4> <p>${game.howto}</p>`;
+
+                rightBox.innerHTML += `<h3>How to Play</h3> <p>${game.howto}</p>`;
                 rightBox.style.display = 'block';
                 
             }
@@ -64,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="col-8">
                         <div class="compact-box d-flex align-items-center" style="background-color: ${color}; color: white;">
                             <div class="compact-image">
-                                <img src="${game.image}" alt="Placeholder Image"> </div>
+                                <img src="${game.image}" alt="Placeholder Image" style="width:80px;height:80px;"> </div>
                             <div class="compact-text ms-3">
                                 <h4>${game.title}</h4>
                                 <p>${game.description}</p> </div>

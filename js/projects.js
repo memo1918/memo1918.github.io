@@ -7,9 +7,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const template = `
     <h1> {{title}} </h1>
-    <div class="image"><img src="{{image}}" alt="Placeholder Image"> </div>
+    <div class="image"><img src="{{image}}" alt="Image" style="width:80px;height:80px;"> </div>
     <br><br>
-    <h3> Project Description?</h3>
+    <h3> Project Description</h3>
     <br>    
     <div class="text"><p>{{description}}</p></div>
     <br><br>
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     <div class="col-8">
                         <div class="compact-box d-flex align-items-center" style="background-color: ${color}; color: white;">
                             <div class="compact-image">
-                                <img src="${project.image}" alt="Placeholder Image"> </div>
+                                <img src="${project.image}" alt="Placeholder Image" style="width:80px;height:80px;"> </div>
                             <div class="compact-text ms-3">
                                 <h4>${project.title}</h4>
                                 <p>${project.description}</p> </div>

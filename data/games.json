@@ -1,12 +1,13 @@
 {
     "game1": {
         "title": "Game of Life",
-        "description": "Detailed information about Game 1.",
-        "details": "This game is about...",
-        "image": "https://placehold.co/80",
-        "rules":"rules of the game",
-        "howto": "how to play the game",
-        "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12263161?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\"><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>"
+        "description": "Simple version of Conway's Game of Life made with python using pygame.",
+        "details": "Simple version of Conway's Game of Life made with python using pygame.",
+        "image": "../images/gameoflife.webp",
+        "rules": "A cell can be live or dead. Each cell interracts with its eight neighbors around. At each step following rules apply: <br /><br /> 1.Any live cell with fewer than two live neighbors dies, as if by underpopulation. <br /><br /> 2.Any live cell with two or three live neighbors lives on to the next generation. <br /><br /> 3.Any live cell with more than three live neighbors dies, as if by overpopulation. <br /><br /> 3.Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.",
+        "howto": "Game starts as paused. you can start and stop the game with \"space\" key. <br /><br /> Clicking on tiles places a live cell. You can also click and move the mouse to place along the way.<br /><br /> Pressing \"ESC\" clears the grid.",
+        "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12263161?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\"><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>",
+        "link":""
     },
     "game2": {
         "title": "game 2",
@@ -15,7 +16,8 @@
         "image": "https://placehold.co/80",
         "rules":"rules of the game",
         "howto": "how to play the game",
-        "iframe": ""
+        "iframe": "",
+        "link":""
         
     },
     "game3": {
@@ -25,7 +27,8 @@
         "image": "https://placehold.co/80",
         "rules":"rules of the game",
         "howto": "how to play the game",
-        "iframe": ""
+        "iframe": "",
+        "link":""
     },
     "game4": {
         "title": "game 4",
@@ -34,6 +37,7 @@
         "image": "https://placehold.co/80",
         "rules":"rules of the game",
         "howto": "how to play the game",
-        "iframe": ""
+        "iframe": "",
+        "link":""
     }
 }

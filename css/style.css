@@ -79,20 +79,21 @@
 .portfolio-box .text {
     word-wrap: break-word;
     line-height: 22.40px;
+    font-size: 1rem;
 }
+
 
 .portfolio-box .image {
     position: absolute;
-    top: 40px; /* Adjust as needed */
-    right: 40px; /* Adjust as needed */
+    top: 20px; /* Adjust as needed */
+    right: 60px; /* Adjust as needed */
 }
  
 .portfolio-box .image img {
-    width: 100%; /* Make the image responsive */
-    max-width: 100px; /* Set a maximum width */
-    height: auto;
+    max-width: 150px;
+    max-height: 150px;
     vertical-align: middle; /* Align the image vertically in the middle */
-    border-radius: 8px;
+    border-radius: 32px;
 }
 
 .compact-box {

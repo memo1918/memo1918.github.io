@@ -1,27 +1,31 @@
 {
     "project1": {
-        "title": "Project 1",
-        "description": "Detailed information about Project 1.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80"
+        "title": "Cloud Comparisson Wep App",
+        "description": "A web app that helps users compare cloud service prices easily by providing a centralized platform for selecting and customizing cloud solutions.",
+        "details": "Our Cloud Price Comparison web app simplifies the process of choosing cloud services for both individuals and businesses. Designed as an open-source tool, it allows users to filter, select, and customize cloud solutions based on their needs. Unlike manually comparing pricing PDFs or using provider-specific tools, our app integrates APIs to fetch up-to-date pricing, ensuring users get accurate and transparent cost estimates.",
+        "image": "../images/cloud-seeker.webp",
+        "link":""
     },
     "project2": {
         "title": "Project 2",
         "description": "Detailed information about Project 2.",
         "details": "This project is about...",
-        "image": "https://placehold.co/80"
+        "image": "https://placehold.co/80",
+        "link":""
         
     },
     "project3": {
         "title": "Project 3",
         "description": "Detailed information about Project 3.",
         "details": "This project is about...",
-        "image": "https://placehold.co/80"
+        "image": "https://placehold.co/80",
+        "link":""
     },
     "project4": {
         "title": "Project 4",
         "description": "Detailed information about Project 4.",
         "details": "This project is about...",
-        "image": "https://placehold.co/80"
+        "image": "https://placehold.co/80",
+        "link":""
     }
 }
