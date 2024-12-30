@@ -118,7 +118,6 @@
     
 }
 
-
 .portfolio-box .image {
     position: absolute;
     top: 20px; /* Adjust as needed */
@@ -126,7 +125,7 @@
     
 
 }
- 
+
 .portfolio-box .image img {
     max-width: 150px;
     max-height: 150px;
@@ -144,25 +143,41 @@
 }
 
 .compact-image img {
-    width: 80px; /* Set a fixed width */
-    height: auto;
+    width: 150px; /* Set a fixed width */
+    height: 150px;
     border-radius: 8px;
 }
 
 .compact-text {
     flex: 1;
+    word-wrap: break-word;
+    padding-right: 20px; /* Add padding to the left and right */
 }
 
 
-/* .card {
-    width: 10rem;
+
+@media (max-width: 1400px) {
+    .compact-image img {
+        width: 100px; /* Set a fixed width */
+        height: 100px;
+    }
 }
 
-.card-img-top {
-    width: 100px;
-    height: 200px;
-    object-fit: cover;
-} */
+@media (max-width: 770px){
+    .compact-image {
+        display: none;
+    }
+    .compact-button{
+        width: 100%;
+        margin-top: 10px;
+    }
+    .compact-box {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+
+
 
 
 /* Media queries for finer control */
