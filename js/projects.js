@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const template = `
     <h1> {{title}} </h1>
-    <div class="image"><img src="{{image}}" alt="Image" style="width:80px;height:80px;"> </div>
+    <div class="image"><img src="{{image}}" alt="Image" style="width:100px;height:100px;"> </div>
     <br><br>
     <h3> Project Description</h3>
     <br>    

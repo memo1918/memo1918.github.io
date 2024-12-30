@@ -1,0 +1,34 @@
+{
+    "certificates": [
+        {
+            "title": "Certificate 1",
+            "description": "Description for Certificate 1",
+            "image": "https://placehold.co/80"
+        },
+        {
+            "title": "Certificate 2",
+            "description": "Description for Certificate 2",
+            "image": "https://placehold.co/80"
+        },
+        {
+            "title": "Certificate 3",
+            "description": "Description for Certificate 3",
+            "image": "https://placehold.co/80"
+        },
+        {
+            "title": "Certificate 4",
+            "description": "Description for Certificate 4",
+            "image": "https://placehold.co/80"
+        },
+        {
+            "title": "Certificate 5",
+            "description": "Description for Certificate 5",
+            "image": "https://placehold.co/80"
+        },
+        {
+            "title": "Certificate 5",
+            "description": "Description for Certificate 5",
+            "image": "https://placehold.co/80"
+        }
+    ]
+}

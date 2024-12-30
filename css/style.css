@@ -26,7 +26,7 @@
     width: 100%;
     height: 100%;
     opacity: 0.7;
-    /* overflow: hidden; */
+    overflow: hidden;
     z-index: -5;
     
 }
@@ -92,13 +92,16 @@
     position: absolute;
     top: 20px; /* Adjust as needed */
     right: 60px; /* Adjust as needed */
+    
+
 }
  
 .portfolio-box .image img {
     max-width: 150px;
     max-height: 150px;
     vertical-align: middle; /* Align the image vertically in the middle */
-    border-radius: 32px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
+    
 }
 
 .compact-box {
@@ -118,6 +121,18 @@
 .compact-text {
     flex: 1;
 }
+
+
+/* .card {
+    width: 10rem;
+}
+
+.card-img-top {
+    width: 100px;
+    height: 200px;
+    object-fit: cover;
+} */
+
 
 /* Media queries for finer control */
 @media (max-width: 768px) {
