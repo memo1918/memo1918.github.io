@@ -27,17 +27,13 @@ document.addEventListener('DOMContentLoaded', function() {
         const game = games[gameId];
         if (game) {
             if (game.iframe != ""){
-                const iframeHeight = Math.min(window.innerHeight * 0.7, 720);
-                const iframeWidth = iframeHeight / 1.027; // Maintain a 1:1 aspect ratio
-                const iframe = game.iframe.replace('width=""', `width="${iframeWidth}"`)
-                                             .replace('height=""', `height="${iframeHeight}"`);
-    
-                
-                gameIframe.innerHTML = iframe;
-                leftBox.innerHTML += `<h3>Rules</h3> <p>${game.rules}</p>`;
+                const iframe = game.iframe.replace('width=""', `width="100%"`)
+                .replace('height=""', `height="100%"`);
+                gameIframe.innerHTML = `<div class="iframe-container">${iframe}</div>`
+                leftBox.innerHTML += `<h3>Rules</h3> <p class="side-box">${game.rules}</p>`;
                 leftBox.style.display = 'block';
 
-                rightBox.innerHTML += `<h3>How to Play</h3> <p>${game.howto}</p>`;
+                rightBox.innerHTML += `<h3>How to Play</h3> <p class="side-box">${game.howto}</p>`;
                 rightBox.style.display = 'block';
                 
             }

@@ -60,13 +60,45 @@
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: inline-block;
     max-width: 600px; 
-    margin: 0 auto; 
+    margin: 0px auto; 
     position: fixed;
     top: 10px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 1000;
 }
+
+@media (max-width: 600px) {
+    #NavButtonsContainer {
+        max-width: 430px;
+        padding: 10px;
+        top: 2px;
+
+        
+    }
+    .nav-button {
+        width: 100px;
+        height: 30px; /* Adjust width to fit 4 buttons horizontally */
+        font-size: small!important;
+        margin: -10px;
+    }
+}
+
+@media (max-width: 412px) {
+    #NavButtonsContainer {
+        max-width: 100%;
+        padding: 5px;
+        top: 2px;
+        
+    }
+    .nav-button {
+        width: 72px;
+        height: 25px; /* Adjust width to fit 4 buttons horizontally */
+        font-size: 0.5rem!important;
+        margin: -8px;
+    }
+}
+
 
 
 .portfolio-box {
@@ -83,8 +115,7 @@
 
 .portfolio-box .text {
     word-wrap: break-word;
-    line-height: 22.40px;
-    font-size: 1rem;
+    
 }
 
 
@@ -135,15 +166,21 @@
 
 
 /* Media queries for finer control */
-@media (max-width: 768px) {
+@media (max-width: 1200px) {
     .portfolio-box .image img {
         visibility: hidden;
     }
 }
 
-@media (max-width: 576px) {
-    .portfolio-box .image img {
-        visibility: hidden;
-    }
+.side-box{
+    line-height: clamp(0.3rem, calc(1rem + 2vw), 25px)!important;
+    font-size: clamp(0.3rem, calc(0.3rem + 2vw), 1.1rem)!important;
+}
+
+.iframe-container {
+    width: 100%;
+    height: min(70vh, 720px)!important;
+    aspect-ratio: 0.9737!important; 
+    margin: 0 auto; 
 }
 
