@@ -16,10 +16,10 @@
 
 <body class="mainBody">
     <!-- copilot skip this div -->
-    <div class="background-container">
+    <!-- <div class="background-container">
         <div class="background-frame">
             <div
-                style="width: 670px; height: 1632.48px; left: 158px; top: 547.91px; position: absolute; transform: rotate(-54.86deg); transform-origin: 0 0; opacity: 0.40">
+                style="width: 670px; height: 1632.48px; left: 158px; top: 547.91px; position: absolute; transform: rotate(-54.86deg); transform-origin: 0 0;">
                 <div
                     style="width: 126.02px; height: 88.75px; left: 0.77px; top: 0px; position: absolute; opacity: 0.05; background: black; border-radius: 8px">
                 </div>
@@ -151,7 +151,7 @@
                 </div>
             </div>
             <div
-                style="width: 670px; height: 1632.48px; left: 548.01px; top: 2827.72px; position: absolute; transform: rotate(-144.88deg); transform-origin: 0 0; opacity: 0.40">
+                style="width: 670px; height: 1632.48px; left: 548.01px; top: 2827.72px; position: absolute; transform: rotate(-144.88deg); transform-origin: 0 0;">
                 <div
                     style="width: 126.02px; height: 88.75px; left: 0.77px; top: 0px; position: absolute; opacity: 0.05; background: black; border-radius: 8px">
                 </div>
@@ -283,6 +283,13 @@
                 </div>
             </div>
         </div>
+    </div> -->
+
+
+    <div class="background-container">
+        <div id="background" class="background-frame">
+            <!-- Backgorund content here -->
+        </div>  
     </div>
 
     <div id="NavButtonsContainer" class="container mt-3 ">
@@ -290,24 +297,25 @@
 
             <!-- First Button -->
             <div class="col-auto d-flex justify-content-center mb-2 ">
-                <button class="nav-button btn btn-primary" onclick="location.href='index.html'">Home</button> 
+                <button class="nav-button btn btn-primary" onclick="location.href='/index.html'">Home</button> 
             </div>
-
+        
             <!-- Second Button -->
             <div class="col-auto d-flex justify-content-center mb-2">
-                <button class="nav-button btn btn-secondary" onclick="location.href='html/projects.html'">Projects</button>
+                <button class="nav-button btn btn-secondary" onclick="location.href='/html/projects.html'">Projects</button>
             </div>
-
+        
             <!-- Third Button -->
             <div class="col-auto d-flex justify-content-center mb-2">
-                <button class="nav-button btn btn-secondary" onclick="location.href='html/games.html'">Games</button> 
+                <button class="nav-button btn btn-secondary" onclick="location.href='/html/games.html'">Games</button> 
             </div>
-
+        
             <!-- Fourth Button -->
             <div class="col-auto d-flex justify-content-center mb-2">
                 <button class="nav-button btn btn-secondary" onclick="location.href=''">Certificates</button> 
             </div>
         </div>
+
     </div>
 
     <div class="container mt-5">
@@ -321,7 +329,7 @@
                         <img src="images/me.webp" alt="It's Me!" style="width:200px; height:200px;">
                     </div>
                     <br><br>
-                    
+
                     <h3> Who am I?</h3>
                     <br>
                     <div class="text">
@@ -400,7 +408,7 @@
 
 
 
-
+    <script src="../js/loadComponent.js"></script>
 </body>
 
 </html>

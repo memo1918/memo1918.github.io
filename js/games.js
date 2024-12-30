@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 
             }
             
-            bottomBox.innerHTML = `<h4>${game.title}</h4><p>${game.details}</p>`;
+            bottomBox.innerHTML = `<h4>${game.title}</h4><p>${game.details}</p> <a href="${game.link}" target="_blank" rel="noopener noreferrer" style="bottom:0px;">Game Link</a>`;
             gameList.style.display = 'none';
             gameDetails.style.display = 'block';
         }
