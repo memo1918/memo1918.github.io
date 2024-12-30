@@ -56,20 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
         const colorIndex = Object.keys(projects).indexOf(projectId) % colors.length;
         const color = colors[colorIndex];
-        
-        // return `
-        //     <div class="container mt-3">
-        //         <div class="row justify-content-center">
-        //             <div class="col-8">
-        //                 <div class="compact-box d-flex align-items-center" style="background-color: ${color}; color: white;">
-        //                     <div class="compact-image">
-        //                         <img src="${project.image}" alt="Placeholder Image" style="width:80px;height:80px;"> </div>
-        //                     <div class="compact-text ms-3">
-        //                         <h4>${project.title}</h4>
-        //                         <p>${project.description}</p> </div>
-        //                     <div>
-        //                         <button class="btn btn-warning" onclick="location.href='#${projectId}'">Project Details</button>
-        //                     </div></div></div></div></div>`;
+    
               return `
                         <div class="compact-box d-flex align-items-center mt-3" style="background-color: ${color}; color: white;">
                             <div class="compact-image">

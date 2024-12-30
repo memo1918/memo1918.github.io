@@ -10,3 +10,4 @@ function loadComponent(url, elementId) {
 document.addEventListener('DOMContentLoaded', function() {
     loadComponent('../html/background.html', 'background');
 });
+
