@@ -12,19 +12,19 @@ h1, h2, h3, h4, h5 {
 
 html {font-size: 100% !important;}
 
-h1 {font-size: clamp(1.5265rem, calc(1.5265rem + 2vw), 3.053rem) !important;}
+h1 {font-size: clamp(1.5265rem, calc(1.5265rem + 2vw), 2.8rem) !important;}
 
-h2 {font-size: clamp(1.221rem, calc(1.221rem + 2vw), 2.442rem) !important;}
+h2 {font-size: clamp(1.221rem, calc(1.221rem + 2vw), 2.2rem) !important;}
 
-h3 {font-size: clamp(0.977rem, calc(0.977rem + 2vw), 1.954rem) !important;}
+h3 {font-size: clamp(0.977rem, calc(0.977rem + 2vw), 1.7rem) !important;}
 
-h4 {font-size: clamp(0.7815rem, calc(0.7815rem + 2vw), 1.563rem) !important;}
+h4 {font-size: clamp(0.7815rem, calc(0.7815rem + 2vw), 1.3rem) !important;}
 
-h5 {font-size: clamp(0.625rem, calc(0.625rem + 2vw), 1.250rem) !important;}
+h5 {font-size: clamp(0.625rem, calc(0.625rem + 2vw), 1.1rem) !important;}
 
-small {font-size: clamp(0.4rem, calc(0.4rem + 2vw), 1rem) !important;}
+small {font-size: clamp(0.4rem, calc(0.4rem + 2vw), 0.8rem) !important;}
 
 p { line-height: clamp(0.5rem, calc(1rem + 2vw), 30px)!important;
-    font-size: clamp(0.5rem, calc(0.5rem + 2vw), 1.5rem) !important;
+    font-size: clamp(0.5rem, calc(0.5rem + 2vw), 1.2rem) !important;
 }
 

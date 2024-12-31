@@ -188,7 +188,7 @@
 
 .iframe-container {
     width: 100%;
-    height: min(70vh, 720px)!important;
+    height: min(75vh, 770px)!important;
     aspect-ratio: 0.9737!important; 
     margin: 0 auto; 
 }
