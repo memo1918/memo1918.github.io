@@ -138,6 +138,7 @@
     width: 150px; /* Set a fixed width */
     height: 150px;
     border-radius: 8px;
+    object-fit: scale-down; 
 }
 
 .compact-text {
@@ -152,6 +153,7 @@
     .compact-image img {
         width: 100px; /* Set a fixed width */
         height: 100px;
+        object-fit: scale-down; 
     }
 }
 
@@ -193,3 +195,10 @@
     margin: 0 auto; 
 }
 
+.card-img-top {
+    width: 100%;
+    max-height: 250px; /* Set a fixed height */
+    object-fit: scale-down; 
+    display: block;
+    margin: 0 auto; /* Center the image */
+}

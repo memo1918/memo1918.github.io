@@ -1,34 +1,44 @@
 {
     "certificates": [
         {
-            "title": "Certificate 1",
-            "description": "Description for Certificate 1",
-            "image": "https://placehold.co/80"
+            "title": "AWS Cloud Quest: Cloud Practitioner",
+            "description": "Demonstrates foundational knowledge of AWS services and hands-on experience with compute, networking, databases, and security.",
+            "image": "../images/certificates/aws-cloud.webp"
         },
         {
-            "title": "Certificate 2",
-            "description": "Description for Certificate 2",
-            "image": "https://placehold.co/80"
+            "title": "AWS Cloud Practitioner-Discovery Day",
+            "description": "Attended a training event covering the benefits of AWS Cloud computing and key services for compute, storage, databases, networking, and content delivery.",
+            "image": "../images/certificates/aws-cloud-practitioner.webp"
         },
         {
-            "title": "Certificate 3",
-            "description": "Description for Certificate 3",
-            "image": "https://placehold.co/80"
+            "title": "NDG Linux Essentials",
+            "description": "Completed the NDG Linux Essentials course, showcasing foundational knowledge of the Linux operating system, command-line navigation, security, file permissions, and system management.",
+            "image": "../images/certificates/Linux Essent-certificate.webp"
         },
         {
-            "title": "Certificate 4",
-            "description": "Description for Certificate 4",
-            "image": "https://placehold.co/80"
+            "title": "Python Programming Certificate",
+            "description": "Completed a comprehensive course covering Python from basics to advanced topics, including data structures, OOP, database operations, Flask, Numpy, Pandas, and Matplotlib.",
+            "image": "../images/certificates/Python.webp"
         },
         {
-            "title": "Certificate 5",
-            "description": "Description for Certificate 5",
-            "image": "https://placehold.co/80"
+            "title": "Unity Game Development",
+            "description": "Completed a course on Unity game development, covering the basics of the engine and creating a 2D game to apply and solidify foundational skills.",
+            "image": "../images/certificates/Unity.webp"
         },
         {
-            "title": "Certificate 5",
-            "description": "Description for Certificate 5",
-            "image": "https://placehold.co/80"
+            "title": "Lightroom Photo Editing",
+            "description": "Completed a course on Adobe Lightroom, focusing on photo editing techniques and tools to enhance photography.",
+            "image": "../images/certificates/lightroom.webp"
+        },
+        {
+            "title": "Magara Jam Attandance Bagde",
+            "description": "Participated in a 48-hour game jam, creating a game from scratch based on a theme and constraints.",
+            "image": "../images/certificates/magaraJam.webp"
+        },
+        {
+            "title": "Artifical Intelligence Summer School",
+            "description": "Participated in a Artifical Intelligence event  organized by the Yalova University.",
+            "image": "../images/certificates/yazsum.webp"
         }
     ]
 }

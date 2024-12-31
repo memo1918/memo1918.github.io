@@ -1,31 +1,46 @@
 {
-    "project1": {
-        "title": "Cloud Comparisson Wep App",
-        "description": "A web app that helps users compare cloud service prices easily by providing a centralized platform for selecting and customizing cloud solutions.",
-        "details": "Our Cloud Price Comparison web app simplifies the process of choosing cloud services for both individuals and businesses. Designed as an open-source tool, it allows users to filter, select, and customize cloud solutions based on their needs. Unlike manually comparing pricing PDFs or using provider-specific tools, our app integrates APIs to fetch up-to-date pricing, ensuring users get accurate and transparent cost estimates.",
-        "image": "../images/cloud-seeker.webp",
-        "link":""
-    },
-    "project2": {
-        "title": "Project 2",
-        "description": "Detailed information about Project 2.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80",
-        "link":""
-        
-    },
-    "project3": {
-        "title": "Project 3",
-        "description": "Detailed information about Project 3.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80",
-        "link":""
-    },
-    "project4": {
-        "title": "Project 4",
-        "description": "Detailed information about Project 4.",
-        "details": "This project is about...",
-        "image": "https://placehold.co/80",
-        "link":""
-    }
+    "projects": [
+        {
+
+            "title": "Cloud Comparisson Wep App",
+            "description": "A web app that helps users compare cloud service prices easily by providing a centralized platform for selecting and customizing cloud solutions.",
+            "details": "Our Cloud Price Comparison web app simplifies the process of choosing cloud services for both individuals and businesses. Designed as an open-source tool, it allows users to filter, select, and customize cloud solutions based on their needs. Unlike manually comparing pricing PDFs or using provider-specific tools, our app integrates APIs to fetch up-to-date pricing, ensuring users get accurate and transparent cost estimates.",
+            "image": "../images/projects/cloud-seeker.webp",
+            "images":[],
+            "link":"https://github.com/memo1918/Cloud-Seeker"
+        },
+        {
+            "title": "<h4>Real Time Rgb Camera Parameters Tuning For Tree Saplings Visual Analysis</h4> <h5 style=\"font-style:italic;\">My Thesis</h5>",
+            "description": "Developed a software prototype for real-time RGB camera tuning, optimizing exposure and white balance for greenhouse automation.",
+            "details": "This thesis explores the development of a software prototype for real-time tuning of RGB camera parameters, addressing challenges posed by changing environmental conditions in greenhouse automation. The project focuses on optimizing exposure and white balance to enhance image quality for machine vision applications in plant monitoring. Beginning with a detailed review of digital camera principles, the thesis examines the impact of light variability on image acquisition and evaluates algorithms for dynamic parameter adjustment. <br><br> A gain control algorithm was fully implemented, while a grey-edge white balance algorithm was partially developed. The project involved a deep analysis of vision systems and light, and the developed algorithms were successful, performing on par with built-in solutions of the camera. <br><br> Experiments demonstrated promising results, particularly for gain control, though oscillations and incomplete white balance integration highlight areas for improvement. Recommendations include further tuning in controlled and deployment environments to ensure robust and reliable performance in real-world scenarios.",
+            "image": "../images/projects/ThesisFigures.webp",
+            "images":[],
+            "link":"https://github.com/memo1918/GainControl-and-GreyEdge"
+            
+        },
+        {
+            "title": "Ansible Automation for Zabbix Agent Installation",
+            "description": "Ansible playbooks and Python script to quickly set up Zabbix agents and add them to your Zabbix server.",
+            "details": "This project automates the installation and configuration of Zabbix agents on various systems and adds hosts to a Zabbix server using Ansible playbooks and a Python script. The automation ensures that the Zabbix agents are correctly installed and configured on target systems, and the hosts are registered in the Zabbix server for monitoring.<br><br> The automation of Zabbix agent installation and host registration ensures consistency, efficiency, and scalability in deployment processes. It reduces the time and effort required for setup, minimizes human errors, and allows for quick scaling across numerous systems. This leads to improved system reliability, reduced downtime, and simplified management, enabling IT teams to focus on more strategic tasks. ",
+            "image": "../images/projects/ansiblezabbix.webp",
+            "images":[],
+            "link":"https://github.com/memo1918/zabbix-agent-ansible-automation"
+        },
+        {
+            "title": "AWS Terraform Infrastructure",
+            "description": "The purpose of this project is to contribute to the community by making highly available and scalable infrastructure code available for everyone to use and learn from.",
+            "details": "The AWS-Terraform-HA-infra project provides a highly available and scalable cloud infrastructure on AWS, ensuring services remain operational even in the event of failures or unexpected demand spikes. By utilizing AWS features like Multi-AZ deployment, the solution distributes resources across multiple Availability Zones to prevent downtime due to zone-specific issues. <br><br> Terraform, as an infrastructure-as-code tool, enables easy provisioning, adjustment, and replication of the setup. The architecture automatically scales resources based on traffic load, ensuring both performance and cost-efficiency. <br><br> The project aims to deliver a practical solution for creating reliable, always-on cloud environments, minimizing the need for manual intervention and maximizing uptime.",
+            "image": "../images/projects/awsterraform.webp",
+            "images":[],
+            "link":"https://github.com/memo1918/AWS-Terraform-HA-infra"
+        },
+        {
+            "title": "Guitar Transmitter",
+            "description": "The Guitar Transmitter project involved developing a wireless transceiver for electric guitars, eliminating the need for cables and allowing musicians to perform freely with seamless, low-latency audio transmission.",
+            "details": "The Guitar Transmitter project involved developing a wireless device that allows users to transmit audio signals from an electric guitar to an amplifier, eliminating the need for traditional cables. The system was built using Pi Pico microcontrollers and RF transceivers, combining hardware configuration and software development to optimize the transmission process. <br><br>The project was successful, achieving a working range of up to 10 meters with a latency of less than 5ms, ensuring a seamless experience for musicians. Despite challenges with audio noise and cracking due to the 8-bit resolution, the prototype met its primary goal of functioning as a reliable guitar transmitter. <br><br> Key innovations included the ability to drive multiple amplifiers with a single transmitter and a 16-byte payload per transmission for enhanced performance. Although the prototype isn’t ready for commercialization, it demonstrated the potential for future improvements and paved the way for further exploration into wireless audio transmission.",
+            "image": "../images/projects/guitartransmitter.webp",
+            "images":[],
+            "link":"https://github.com/memo1918/Guitar-Transmitter"
+        }
+    ]
 }

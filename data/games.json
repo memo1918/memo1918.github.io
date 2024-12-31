@@ -1,43 +1,43 @@
 {
-    "game1": {
-        "title": "Game of Life",
-        "description": "Simple version of Conway's Game of Life made with python using pygame.",
-        "details": "Simple version of Conway's Game of Life made with python using pygame.",
-        "image": "../images/gameoflife.webp",
-        "rules": "A cell can be live or dead. Each cell interracts with its eight neighbors around. At each step following rules apply: <br /><br /> 1.Any live cell with fewer than two live neighbors dies, as if by underpopulation. <br /><br /> 2.Any live cell with two or three live neighbors lives on to the next generation. <br /><br /> 3.Any live cell with more than three live neighbors dies, as if by overpopulation. <br /><br /> 3.Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.",
-        "howto": "Game starts as paused. you can start and stop the game with \"space\" key. <br /><br /> Clicking on tiles places a live cell. You can also click and move the mouse to place along the way.<br /><br /> Pressing \"ESC\" clears the grid.",
-        "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12384765?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\" ><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>",
-        "link":"https://github.com/memo1918/GameOfLife"
-    },
-    "game2": {
-        "title": "game 2",
-        "description": "Detailed information about game 2.",
-        "details": "This game is about...",
-        "image": "https://placehold.co/80",
-        "rules":"rules of the game",
-        "howto": "how to play the game",
-        "iframe": "",
-        "link":""
-        
-    },
-    "game3": {
-        "title": "game 3",
-        "description": "Detailed information about game 3.",
-        "details": "This game is about...",
-        "image": "https://placehold.co/80",
-        "rules":"rules of the game",
-        "howto": "how to play the game",
-        "iframe": "",
-        "link":""
-    },
-    "game4": {
-        "title": "game 4",
-        "description": "Detailed information about game 4.",
-        "details": "This game is about...",
-        "image": "https://placehold.co/80",
-        "rules":"rules of the game",
-        "howto": "how to play the game",
-        "iframe": "",
-        "link":""
-    }
+    "games": [ 
+        {
+            "title": "Game of Life ",
+            "description": "Simple version of Conway's Game of Life made with python using pygame.",
+            "details": "Simple version of Conway's Game of Life made with python using pygame.",
+            "image": "../images/games/gameoflife.webp",
+            "images":[],
+            "rules": "A cell can be live or dead. Each cell interracts with its eight neighbors around. At each step following rules apply: <br /><br /> 1.Any live cell with fewer than two live neighbors dies, as if by underpopulation. <br /><br /> 2.Any live cell with two or three live neighbors lives on to the next generation. <br /><br /> 3.Any live cell with more than three live neighbors dies, as if by overpopulation. <br /><br /> 3.Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.",
+            "howto": "Game starts as paused. you can start and stop the game with \"space\" key. <br /><br /> Clicking on tiles places a live cell. You can also click and move the mouse to place along the way.<br /><br /> Pressing \"ESC\" clears the grid.",
+            "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12384765?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\" ><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>",
+            "link":"https://github.com/memo1918/GameOfLife"
+        },
+        {
+            "title": " Breakthrough board game",
+            "description": "It is Breakthrough board game made with pygame python. Game has basic AI to play with it. Player can start first or second.",
+            "details": "This game is about...",
+            "image": "../images/games/brekthrough.webp",
+            "images":[],
+            "rules":"Each player moves one piece per turn.<br><br>If the target position is empty, a piece can be moved one space forward or diagonally forward. <br><br> A piece may be also moved to a square occupied by an enemy piece, if the target position is one space diagonally forward.<br><br>The game ends if one player reaches opponent's home row.",
+            "howto": "When its your turn, clicking on a piece selects and highlights the possible moves. Clicking on a possible move moves the piece. <br><br> Pressing \"ESC\" takes back to main menu.",
+            "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12262804?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\"><a href=\"https://memo1918.itch.io/breakthrough-board-game\">Play Breakthrough-board-game on itch.io</a></iframe>",
+            "link":"https://github.com/memo1918/Breakthrough-board-game"
+            
+        },
+        {
+            "title": "Historia",
+            "description": "2D game made for Magara Jam 2021 within 72hours",
+            "details": "This game is about...",
+            "image": "../images/games/historia.webp",
+            "images":[],
+            "link":"https://memo1918.itch.io/historia"
+        },
+        {
+            "title": "Not Another Trash Game",
+            "description": "Another 2D Game. Made for #GlobalGameJam2022",
+            "details": "This game is about...",
+            "image": "../images/games/trashgame.webp",
+            "images":[],
+            "link":"https://memo1918.itch.io/not-another-trash-game"
+        }
+    ]
 }

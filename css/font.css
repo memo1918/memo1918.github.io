@@ -22,7 +22,8 @@ h4 {font-size: clamp(0.7815rem, calc(0.7815rem + 2vw), 1.3rem) !important;}
 
 h5 {font-size: clamp(0.625rem, calc(0.625rem + 2vw), 1.1rem) !important;}
 
-small {font-size: clamp(0.4rem, calc(0.4rem + 2vw), 0.8rem) !important;}
+small { line-height: clamp(0.5rem, calc(1rem + 2vw), 20px)!important;
+        font-size: clamp(0.4rem, calc(0.4rem + 2vw), 1.1rem) !important;}
 
 p { line-height: clamp(0.5rem, calc(1rem + 2vw), 30px)!important;
     font-size: clamp(0.5rem, calc(0.5rem + 2vw), 1.2rem) !important;
