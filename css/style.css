@@ -1,47 +1,27 @@
 @import url('variables.css');
 
-/* * {
-    outline: 2px solid red;
-  } */
 
+body{
+    background-image:url('../images/Backgroundpattern4.png');
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top center; 
+    height: 100%;
 
-
-.mainBody{
-    /* color: var(--background-color); */
-    
     font-size: 16px;
     font-family: Inter;
     font-weight: 500;
     line-height: 16px;
     word-wrap: break-word ;
-    background-color: var(--background-color);
-
-
+    background-color: white;
 }
 
-.background-container {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    opacity: 0.7;
-    overflow: hidden;
-    z-index: -5;
-    
-}
-
-.background-frame {
-    position: absolute;
-    top: +10px;
-    left: -100px;
-    
-    width: 100%;
-    height: 100%;
-    /* transform: translate(-10px, 400px) ; */
-    transform: scale(0.9);
-    
-
+@media (max-width: 768px){
+    body {
+        background-size: auto; 
+        background-position: top center; 
+    } 
 }
 
 .nav-button {
@@ -87,9 +67,9 @@
         grid-template-columns: repeat(2, 1fr); /* 2x2 grid */
      
     }
+
+
 }
-
-
 
 
 
@@ -112,8 +92,8 @@
 
 .portfolio-box .image {
     position: absolute;
-    top: 20px; /* Adjust as needed */
-    right: 60px; /* Adjust as needed */
+    top: 20px; 
+    right: 60px; 
     
 
 }
@@ -121,7 +101,7 @@
 .portfolio-box .image img {
     max-width: 150px;
     max-height: 150px;
-    vertical-align: middle; /* Align the image vertically in the middle */
+    vertical-align: middle; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     
 }
@@ -135,7 +115,7 @@
 }
 
 .compact-image img {
-    width: 150px; /* Set a fixed width */
+    width: 150px; 
     height: 150px;
     border-radius: 8px;
     object-fit: scale-down; 
@@ -144,20 +124,20 @@
 .compact-text {
     flex: 1;
     word-wrap: break-word;
-    padding-right: 30px; /* Add padding to the left and right */
+    padding-right: 30px; 
 }
 
 
 
 @media (max-width: 1400px) {
     .compact-image img {
-        width: 100px; /* Set a fixed width */
+        width: 100px; 
         height: 100px;
         object-fit: scale-down; 
     }
 }
 
-@media (max-width: 770px){
+@media (max-width: 768px){
     .compact-image {
         display: none;
     }
@@ -169,12 +149,15 @@
         flex-direction: column;
         align-items: flex-start;
     }
+    body {
+        background-size: auto; 
+        background-position: top center; 
+    }
+    
 }
 
 
 
-
-/* Media queries for finer control */
 @media (max-width: 1200px) {
     .portfolio-box .image img {
         visibility: hidden;
@@ -197,8 +180,8 @@
 
 .card-img-top {
     width: 100%;
-    max-height: 250px; /* Set a fixed height */
+    max-height: 250px; 
     object-fit: scale-down; 
     display: block;
-    margin: 0 auto; /* Center the image */
+    margin: 0 auto; 
 }

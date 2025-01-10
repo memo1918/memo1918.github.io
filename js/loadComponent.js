@@ -7,7 +7,3 @@ function loadComponent(url, elementId) {
         .catch(error => console.error('Error loading component:', error));
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    loadComponent('../html/background.html', 'background');
-});
-
