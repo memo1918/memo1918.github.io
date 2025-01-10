@@ -2,7 +2,7 @@
 
 
 body{
-    background-image:url('../images/Backgroundpattern4.png');
+    background-image:url('../images/background.png');
     background-attachment: scroll;
     background-repeat: no-repeat;
     background-size: cover;
@@ -94,8 +94,6 @@ body{
     position: absolute;
     top: 20px; 
     right: 60px; 
-    
-
 }
 
 .portfolio-box .image img {
@@ -104,6 +102,28 @@ body{
     vertical-align: middle; 
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); 
     
+}
+
+
+@media (max-width: 1400px) {
+    .portfolio-box .image img {
+        max-width: 100px;
+        max-height: 100px;
+    }
+    .portfolio-box .image {
+        position: absolute;
+        top: 20px; 
+        right: 20px; 
+    }
+    
+}
+
+
+@media (max-width: 1200px) {
+    .portfolio-box .image img {
+        visibility: hidden;
+        display: none;
+    }
 }
 
 .compact-box {
@@ -158,11 +178,6 @@ body{
 
 
 
-@media (max-width: 1200px) {
-    .portfolio-box .image img {
-        visibility: hidden;
-    }
-}
 
 .side-box{
     line-height: clamp(0.3rem, calc(1rem + 2vw), 25px)!important;
@@ -184,4 +199,23 @@ body{
     object-fit: scale-down; 
     display: block;
     margin: 0 auto; 
+}
+
+
+#home-left-box {
+    margin-top: 100px;
+}
+
+#home-right-box {
+    margin-top: 200%;;
+}    
+
+@media (max-width: 991.5px){
+    #home-left-box {
+        margin-top: 10px;
+    }
+    #home-right-box {
+        margin-top: 10px;
+    }    
+    
 }
