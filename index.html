@@ -16,53 +16,73 @@
 
 <body>
 
-    <nav id="NavButtonsContainer" class="navbar navbar-expand container mt-3 ">
+    <!-- <nav id="NavButtonsContainer" class="navbar navbar-expand  container mt-3 ">
         <div class="container-fluid justify-content-star">
 
-            <div class="navbar-collapse">
+            <div class="navbar-collapse ">
                 <ul class="navbar-nav gap-3 justify-content-center mt-1">
-                    <!-- First Button -->
                     <li class="nav-item   mb-2 ">
-                        <button class="nav-button btn btn-primary" onclick="location.href='index.html'">Home</button>
+                        <button class="nav-button btn btn-primary" onclick="location.href='index.html'"> <span class="">Home</span> </button>
                     </li>
 
-                    <!-- Second Button -->
                     <li class="nav-item  mb-2">
                         <button class="nav-button btn btn-secondary"
-                            onclick="location.href='/html/projects.html'">Projects</button>
+                            onclick="location.href='/html/projects.html'"><span class="underline-anim">Projects</span></button>
                     </li>
 
-                    <!-- Third Button -->
                     <li class="nav-item  mb-2">
                         <button class="nav-button btn btn-secondary"
-                            onclick="location.href='/html/games.html'">Games</button>
+                            onclick="location.href='/html/games.html'"><span class="underline-anim">Games</span></button>
                     </li>
 
-                    <!-- Fourth Button -->
                     <li class="nav-item  mb-2">
                         <button class="nav-button btn btn-secondary"
-                            onclick="location.href='/html/certificates.html'">Certificates</button>
+                            onclick="location.href='/html/certificates.html'"><span class="underline-anim">Certificates</span></button>
                     </li>
                 </ul>
             </div>
         </div>
+    </nav> -->
+
+    <nav id="NavButtonsContainer" class="navbar navbar-expand">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav gap-3 justify-content-center mt-1">
+                <!-- First Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-primary" onclick="location.href='index.html'">
+                        <span class="">Home</span>
+                    </button>
+                </li>
+    
+                <!-- Second Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='/html/projects.html'">
+                        <span class="underline-anim">Projects</span>
+                    </button>
+                </li>
+    
+                <!-- Third Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='/html/games.html'">
+                        <span class="underline-anim">Games</span>
+                    </button>
+                </li>
+    
+                <!-- Fourth Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='/html/certificates.html'">
+                        <span class="underline-anim">Certificates</span>
+                    </button>
+                </li>
+            </ul>
+        </div>
     </nav>
+    
+    
+    
 
     <div class="container mt-5">
         <div class="row justify-content-center">
-
-            <div class="col-12 col-lg-2 order-2 order-lg-1 mb-1">
-                <div id="home-left-box" class="portfolio-box"
-                    style="background-color: #7c35decf; color: white; padding: 12px; ">
-                    <!-- Left box content -->
-                    <p > Explore the source code for this webpage on
-                        <a href="https://github.com/memo1918/memo1918.github.io\" target="_blank" style="color: #deae35;">GitHub</a> 
-                        or check out my other
-                        <a href="https://github.com/memo1918?tab=repositories\" target="_blank" style="color: #deae35;">projects and repositories</a>.
-                    </p>
-
-                </div>
-            </div>
 
 
             <div class="col-12 col-lg-8 order-1 order-lg-2 mb-1">
@@ -95,17 +115,6 @@
                 </div>
             </div>
 
-            <div class="col-12 col-lg-2 order-3 order-lg-3 mb-1">
-                <div id="home-right-box" class="portfolio-box"
-                    style="background-color: #cb680bcf; color: white; padding: 12px; ">
-                    <!-- Right box content -->
-                    <p > I don't know what to put here yet. So while waiting, you might want to check out my 
-                        <a href="https://www.linkedin.com/in/mehmet-sahin-uces/" target="_blank" style="color: var(--primary-color)">LinkedIn</a> profile.
-                    </p>
-
-                </div>
-            </div>
-
         </div>
 
     </div>
@@ -115,7 +124,7 @@
         <div class="row justify-content-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
                 <!-- compact box -->
-                <div class="compact-box d-flex align-items-center" style="background-color: #4f000bd6; color: white;">
+                <div class="compact-box d-flex align-items-center" style="background-color: white; color: var(--text-color);">
                     <div class="compact-image">
                         <img src="https://placehold.co/80" alt="Placeholder Image">
                     </div>
@@ -125,27 +134,7 @@
                     </div>
                 </div>
 
-                <div class="compact-box d-flex align-items-center mt-3"
-                    style="background-color: #cb680bcf; color: white;">
-                    <div class="compact-image">
-                        <img src="https://placehold.co/80" alt="Placeholder Image">
-                    </div>
-                    <div class="compact-text ms-3">
-                        <h4>Compact Box Title</h4>
-                        <p>Short description for the compact box. This should be concise and to the point.</p>
-                    </div>
-                </div>
 
-                <div class="compact-box d-flex align-items-center mt-3"
-                    style="background-color: #d63605cf; color: white;">
-                    <div class="compact-image">
-                        <img src="https://placehold.co/80" alt="Placeholder Image">
-                    </div>
-                    <div class="compact-text ms-3">
-                        <h4>Compact Box Title</h4>
-                        <p>Short description for the compact box. This should be concise and to the point.</p>
-                    </div>
-                </div>
 
             </div>
         </div>

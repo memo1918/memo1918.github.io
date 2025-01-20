@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const rightBox = document.getElementById('right-box');
     const bottomBox = document.getElementById('bottom-box');
 
-
-    const colors = ["#cb680bcf","#7c35decf","#d63605cf","#2ec4b5dc"];
-
     let games = {};
 
     function loadGames() {
@@ -50,14 +47,13 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createGameCard(index, game) {
-        const color = colors[index % colors.length];
         let title = game.title;
         if (game.iframe){
             title = `${game.title} <br><small style=\"font-style:italic;\">Play in browser</small>`;
         }
 
         return `
-            <div class="compact-box d-flex align-items-center mt-3" style="background-color: ${color}; color: white;">
+            <div class="compact-box d-flex align-items-center mt-3"">
                 <div class="compact-image">
                     <img src="${game.image}" alt="Placeholder Image" "> </div>
                 <div class="compact-text ms-3">
