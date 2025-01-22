@@ -1,0 +1,27 @@
+.header-with-line {
+    position: relative; 
+    display: inline-block; 
+    padding-left: 40px; 
+}
+
+.header-with-line::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%) scaleX(1);
+    width: 30px; 
+    height: 4px; 
+    background-color: gold; 
+    border-radius: 2px; 
+    transition: all 0.3s ease; 
+}
+
+
+
+.compact-box:hover .header-with-line::before{
+    width: 20px; 
+    height: 20px; 
+    border-radius: 50%; 
+    transform: translateY(-50%) scaleX(1);
+}

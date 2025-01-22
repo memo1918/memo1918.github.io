@@ -40,13 +40,13 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createProjectCard(index, project) {
         return `
-                <div class="compact-box d-flex align-items-center mt-3" style="background-color: var(--background-color); color: var(--text-color);">
+                <div class="compact-box  d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
                  <!--
                  <div class="compact-image">
                     <img src="${project.image}" alt="Placeholder Image" "> </div>    
                     -->
-                <div class="compact-text ms-3">
-                    <a class="projeButton"  href="#${index}"><h3 >${project.title}</h3></a>
+                <div class="compact-text  ms-3">
+                    <a class="projeButton"  href="#${index}"><h3 class="header-with-line">${project.title}</h3></a>
                     <p>${project.description}</p> </div>
 
                 </div>`;

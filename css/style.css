@@ -10,6 +10,7 @@ body{
     /* background-attachment: scroll; */
     background-repeat: no-repeat;
 
+
     /* height: 100%; */
 
     font-size: 16px;
@@ -49,7 +50,7 @@ body{
     transform-origin: bottom center;
 }
   
-.nav-button:hover .underline-anim::after {
+.btn:hover .underline-anim::after {
     transform: scaleX(1);
     transform-origin: bottom center;
 }
@@ -259,3 +260,29 @@ body{
     }    
     
 }
+
+
+
+.side-anim {
+    display: inline-block;
+    position: relative;
+  }
+  
+.side-anim::after {
+    content: '';
+    position: absolute;
+    width: 4px;
+    transform: scaleY(0);
+    height: 90%;
+    top: 0;
+    left: -20px;
+    background-color: gold;
+    transition: transform 1s ease-out;
+
+}
+
+.animated::after {
+    transform: scaleY(1); 
+    transform-origin: top center;
+}
+

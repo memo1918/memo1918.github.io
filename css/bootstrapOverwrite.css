@@ -15,16 +15,7 @@
 
 }
 
-/* .btn-primary:hover {
-    background-color: var(--primary-color) !important;
-    color: white!important;
-    
-} */
 
-/* .btn-primary:active, .btn-primary:focus {
-    background-color: var(--primary-color-active) !important;
-
-} */
 
 .btn-secondary {
     /* background-color: var(--grey-button) !important; */
@@ -36,33 +27,25 @@
 
 }
 
-/* .btn-secondary:hover {
-    background-color: var(--grey-button-hover) !important;
-}
-
-
-.btn-secondary:active, .btn-secondary:focus {
-    background-color: var(--grey-button-active) !important;
-} */
 
 .btn-danger{
-    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
     border: none !important;
-    color: #fff !important;
     outline: none !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    height: auto;
+    /* width: 130px; */
+    /* border-radius: 16px !important; */
+    background-color: var(--background-color) !important;
+    font-size: large !important;
+    font-weight: 800 !important;
 }
 
-.btn-danger:hover {
-    background-color: var(--secondary-color-hover) !important;
-}
+/* .btn-danger:hover{
+    color: red !important;
+} */
 
-.btn-danger:active, .btn-danger:focus {
-    background-color: var(--secondary-color-active) !important;
-}
 
-.btn-warning{
+/* .btn-warning{
     background-color: var(--button-warning-color) !important;
     border: none !important;
     color: black !important;
@@ -75,5 +58,5 @@
 }
 .btn-warning:active, .btn-warning:focus {
     background-color: var(--button-warning-color-active) !important;
-}
+} */
 

@@ -7,3 +7,9 @@ function loadComponent(url, elementId) {
         .catch(error => console.error('Error loading component:', error));
 }
 
+
+// $(window).load(function() {
+//     $("body").removeClass("preload");
+//   });
+
+
