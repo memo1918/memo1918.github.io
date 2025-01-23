@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createProjectCard(index, project) {
         return `
-                <div class="compact-box  d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
+                <div class="compact-box d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
                  <!--
                  <div class="compact-image">
                     <img src="${project.image}" alt="Placeholder Image" "> </div>    
@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showProjectList();
         }
 
-        // Generate project cards
+
         // Generate project cards
         projects.forEach((project, index) => {
             projectList.innerHTML += createProjectCard(index, project);

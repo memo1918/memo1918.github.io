@@ -1,29 +1,17 @@
 @import url('variables.css');
 
 .btn-primary {
-    /* background-color: var(--primary-color) !important; */
     color: var(--text-color) !important;
     border: none !important;
     outline: none !important;
-    /* backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
-    /* text-decoration: wavy!important;
-    text-decoration-line: underline!important;
-    text-decoration-color: darkblue!important;
-    text-decoration-thickness: 2px!important;
-    text-decoration-skip-ink: none; */
-
 }
 
 
 
 .btn-secondary {
-    /* background-color: var(--grey-button) !important; */
     border: none !important;
     color: #000000 !important;
     outline: none !important;
-    /* backdrop-filter: blur(4px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15); */
 
 }
 
@@ -33,30 +21,18 @@
     border: none !important;
     outline: none !important;
     height: auto;
-    /* width: 130px; */
-    /* border-radius: 16px !important; */
+
     background-color: var(--background-color) !important;
     font-size: large !important;
     font-weight: 800 !important;
 }
 
-/* .btn-danger:hover{
-    color: red !important;
-} */
-
-
-/* .btn-warning{
-    background-color: var(--button-warning-color) !important;
-    border: none !important;
-    color: black !important;
-    outline: none !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+.card img{
+    transition: all 0.25s;
 }
-.btn-warning:hover {
-    background-color: var(--button-warning-color-hover) !important;
+
+.card img:hover {
+    transform: scale(0.9);
+
 }
-.btn-warning:active, .btn-warning:focus {
-    background-color: var(--button-warning-color-active) !important;
-} */
 

@@ -54,14 +54,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
         return `
             <div class="compact-box d-flex align-items-center mt-3"">
-                <div class="compact-image">
-                    <img src="${game.image}" alt="Placeholder Image" "> </div>
+                <!-- <div class="compact-image">
+                    <img src="${game.image}" alt="Placeholder Image" "> </div> -->
                 <div class="compact-text ms-3">
-                    <h3>${title}</h3>
+                    <a class="projeButton"  href="#${index}"><h3 class="header-with-line">${title}</h3></a>
                     <p>${game.description}</p> </div>
-                <div class="compact-button d-grid col-8 col-sm-8 col-md-1 col-lg-1  justify-content-md-end">
-                    <button class="btn btn-warning" onclick="location.href='#${index}'" >Game Details</button>
-                </div>
+
             </div>`;
     }
 

@@ -16,11 +16,11 @@ document.addEventListener('DOMContentLoaded', function() {
 
         certificates.forEach((certificate) => {
             const col = document.createElement('div');
-            col.className = 'col-10 col-sm-6 col-md-4 col-lg-3 mb-4'; // Adjust column sizes for different screen sizes
+            col.className = 'col-10 col-sm-6 col-md-4 col-lg-3 mb-4 d-flex align-items-stretch"'; // Adjust column sizes for different screen sizes
 
             const card = document.createElement('div');
-            card.className = 'card'; // Ensure cards have equal height
-            card.style = 'background-color:rgba(247, 247, 247, 0.9); backdrop-filter: blur(8px);';
+            card.className = 'card '; // Ensure cards have equal height
+            card.style = 'background-color: var(--background-color);box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); border: none;';
             card.innerHTML = `
                 <a href="${certificate.image}" target="_blank">
                     <img src="${certificate.image}" class="card-img-top" alt="${certificate.title}">

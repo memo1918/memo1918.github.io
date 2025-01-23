@@ -8,8 +8,3 @@ function loadComponent(url, elementId) {
 }
 
 
-// $(window).load(function() {
-//     $("body").removeClass("preload");
-//   });
-
-
