@@ -164,22 +164,22 @@ body{
 
 .projeButton{
     color: darkblue;
-    text-decoration: underline;
-    text-decoration-color: #00008b;
     transition: all 500ms;
 
 }
-.projeButton:hover{
-    color: red;
-    text-decoration: underline;
-    text-decoration-color: red;
-    transition: all 250ms;
 
+.box-link:hover .projeButton{
+    color: red;
+    transition: all 250ms;
 }
+
 .projeButton:hover::after{
     transition: all 500ms;
 }
 
+.box-link{
+    text-decoration: none;
+}
 
 
 

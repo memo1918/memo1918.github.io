@@ -53,14 +53,15 @@ document.addEventListener('DOMContentLoaded', function() {
         }
 
         return `
+            <a class="box-link"  href="#${index}">
             <div class="compact-box d-flex align-items-center mt-3"">
                 <!-- <div class="compact-image">
                     <img src="${game.image}" alt="Placeholder Image" "> </div> -->
                 <div class="compact-text ms-3">
-                    <a class="projeButton"  href="#${index}"><h3 class="header-with-line">${title}</h3></a>
+                    <h3 class="header-with-line projeButton">${title}</h3>
                     <p>${game.description}</p> </div>
-
-            </div>`;
+            </div>
+            </a>`;
     }
 
     function initializePage() {

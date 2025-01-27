@@ -40,16 +40,17 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function createProjectCard(index, project) {
         return `
+                <a class="box-link"  href="#${index}">
                 <div class="compact-box d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
                  <!--
                  <div class="compact-image">
                     <img src="${project.image}" alt="Placeholder Image" "> </div>    
                     -->
                 <div class="compact-text  ms-3">
-                    <a class="projeButton"  href="#${index}"><h3 class="header-with-line">${project.title}</h3></a>
+                    <h3 class="header-with-line projeButton">${project.title}</h3>
                     <p>${project.description}</p> </div>
 
-                </div>`;
+                </div> </a>`;
     }
 
     function initializePage() {
