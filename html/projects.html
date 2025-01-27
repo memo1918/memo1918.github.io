@@ -16,33 +16,38 @@
 
 
 <body >
-
-    <nav id="NavButtonsContainer" class="navbar navbar-expand container mt-3 ">
-        <div class="container-fluid justify-content-star">
-
-            <div class="navbar-collapse">
-                <ul class="navbar-nav gap-3 justify-content-center mt-1">
+    
+    <nav id="NavButtonsContainer" class="navbar navbar-expand">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav gap-3 justify-content-center mt-1">
                 <!-- First Button -->
-                    <li class="nav-item   mb-2 ">
-                        <button class="nav-button btn btn-secondary" onclick="location.href='../index.html'">Home</button> 
-                    </li>
-                
-                    <!-- Second Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-primary" onclick="location.href='projects.html'">Projects</button>
-                    </li>
-                
-                    <!-- Third Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary" onclick="location.href='games.html'">Games</button> 
-                    </li>
-                
-                    <!-- Fourth Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary" onclick="location.href='certificates.html'">Certificates</button> 
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='../index.html'">
+                        <span class="underline-anim">Home</span>
+                    </button>
+                </li>
+    
+                <!-- Second Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-primary" onclick="location.href='projects.html'">
+                        <span class="underline-anim">Projects</span>
+                    </button>
+                </li>
+    
+                <!-- Third Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='games.html'">
+                        <span class="underline-anim">Games</span>
+                    </button>
+                </li>
+    
+                <!-- Fourth Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='certificates.html'">
+                        <span class="underline-anim">Certificates</span>
+                    </button>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -62,11 +67,11 @@
                 <div class="row justify-content-center">
                     <!-- This button is for going back to the project list page -->
                     <div class="col-12 d-flex justify-content-start ">
-                        <button id="back-button" class="btn btn-danger">Back to Projects</button>
+                        <button id="back-button" class="btn btn-danger"><span class="underline-anim">Back to Projects </span></button>
                     </div>
 
                     <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                        <div id="project-content" class="portfolio-box"
+                        <div id="project-content" class="portfolio-box "
                             style="margin-top: 0px; ">
                             <!-- JS loadProjectDetails() function fills this space -->
                         </div>
@@ -76,8 +81,20 @@
         </div>
     </div>
 
+    <footer id="footer" class="d-flex flex-wrap px-3 justify-content-between align-items-center py-3 my-2 ">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text ">Designed and built by Mehmet S. Uces</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://github.com/memo1918" target="_blank"><svg class="ic-github " width="50" height="50"></svg></a></li>
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://www.linkedin.com/in/mehmet-sahin-uces/" target="_blank"><svg class="ic-linkedin" width="50" height="50"></svg></a></li>
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://memo1918.itch.io" target="_blank"><svg class="ic-itchio" width="50" height="50"></svg></a></li>
+        </ul>
+    </footer>
+    
     <script src="../js/projects.js"></script>
-    <script src="../js/loadComponent.js"></script>
 </body>
+
 
 </html>

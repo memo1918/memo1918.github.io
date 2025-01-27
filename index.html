@@ -5,69 +5,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>memo1918 Portfolio</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrapOverwrite.css">
-    <link rel="stylesheet" href="css/font.css">
+    <link  rel="stylesheet" href="css/style.css">
+    <link  rel="stylesheet" href="css/bootstrapOverwrite.css">
+    <link  rel="stylesheet" href="css/font.css">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link  href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
 </head>
 
-<body>
+<body class="preload">
 
-    <nav id="NavButtonsContainer" class="navbar navbar-expand container mt-3 ">
-        <div class="container-fluid justify-content-star">
 
-            <div class="navbar-collapse">
-                <ul class="navbar-nav gap-3 justify-content-center mt-1">
-                    <!-- First Button -->
-                    <li class="nav-item   mb-2 ">
-                        <button class="nav-button btn btn-primary" onclick="location.href='index.html'">Home</button>
-                    </li>
+    <nav id="NavButtonsContainer" class="navbar navbar-expand">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav gap-3 justify-content-center mt-1">
+                <!-- First Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-primary" onclick="location.href='index.html'">
+                        <span class="underline-anim">Home</span>
+                    </button>
+                </li>
+    
+                <!-- Second Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='/html/projects.html'">
+                        <span class="underline-anim">Projects</span>
+                    </button>
+                </li>
+    
+                <!-- Third Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='/html/games.html'">
+                        <span class="underline-anim">Games</span>
+                    </button>
+                </li>
+    
+                <!-- Fourth Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='/html/certificates.html'">
+                        <span class="underline-anim">Certificates</span>
+                    </button>
+                </li>
 
-                    <!-- Second Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary"
-                            onclick="location.href='/html/projects.html'">Projects</button>
-                    </li>
-
-                    <!-- Third Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary"
-                            onclick="location.href='/html/games.html'">Games</button>
-                    </li>
-
-                    <!-- Fourth Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary"
-                            onclick="location.href='/html/certificates.html'">Certificates</button>
-                    </li>
-                </ul>
-            </div>
+            </ul>
         </div>
     </nav>
+    
+    
+    
 
     <div class="container mt-5">
         <div class="row justify-content-center">
 
-            <div class="col-12 col-lg-2 order-2 order-lg-1 mb-1">
-                <div id="home-left-box" class="portfolio-box"
-                    style="background-color: #7c35decf; color: white; padding: 12px; ">
-                    <!-- Left box content -->
-                    <p > Explore the source code for this webpage on
-                        <a href="https://github.com/memo1918/memo1918.github.io\" target="_blank" style="color: #deae35;">GitHub</a> 
-                        or check out my other
-                        <a href="https://github.com/memo1918?tab=repositories\" target="_blank" style="color: #deae35;">projects and repositories</a>.
-                    </p>
-
-                </div>
-            </div>
-
 
             <div class="col-12 col-lg-8 order-1 order-lg-2 mb-1">
                 <!-- portfolio text -->
-                <div class="portfolio-box">
+                <div id="mainbox" class="portfolio-box">
+                    
                     <h1>Welcome to My Portfolio </h1>
 
                     <div class="image">
@@ -75,85 +70,93 @@
                             style="width:200px; height:200px; border-radius: 32px;">
                     </div>
                     <br><br>
-
-                    <h3> Who am I?</h3>
+                    
+                    <h3> Hey!</h3>
                     <br>
-                    <div class="text">
-                        <p>I am Mehmet. I am a passionate engineer with interests ranging from embedded to devops, building physical projects to making small games. Currently I am learning about cloud and networking.</p>
+                    <div class="text side-anim">
+                        <p>I am Mehmet. I am a passionate engineer with interests ranging from embedded to devops, working in backend to making small games. 
+                            I am a person who likes to know a lot, so these days I am interested in DevOps and networking with a pinch of web development.</p>
                     </div>
                     <br><br>
 
-                    <h3> What do I do?</h3>
+                    <h3> About me</h3>
                     <br>
-                    <div class="text">
-                        <p>Excepteur efficient emerging, minim veniam anim aute carefully curated Ginza conversation
-                            exquisite perfect nostrud nisi intricate Content. Qui international first-class nulla ut.
-                            Punctual adipisicing, essential lovely queen tempor eiusmod irure. Exclusive izakaya
-                            charming Scandinavian impeccable aute quality of life soft power pariatur Melbourne occaecat
-                            discerning.</p>
+                    <div class="text side-anim">
+                        <p>We all played video games, right? that's how I discovered coding, but game development was too complicated and hard, so I carried on playing Minecraft. Then I wanted to play with my friends and I tried to host/create a Minecraft server. Who knew there was such a thing as public and private addresses? <br><br>
+                            Fast forward a few years later, with the love I have for computers and technology, I was sure I wanted to work in this field, so I learned Python with the help of a course. That showed me that the possibilities are endless! I could do anything from data analisis to web scraping and more. <br><br>
+                            With small projects here and there, time passed and now I have a Bachelor's degree in Computer Systems with a thesis that I am really proud of, about image sensors and white balancing.  Currently I am working as a DevOps specialist.</p>
                     </div>
-                </div>
-            </div>
-
-            <div class="col-12 col-lg-2 order-3 order-lg-3 mb-1">
-                <div id="home-right-box" class="portfolio-box"
-                    style="background-color: #cb680bcf; color: white; padding: 12px; ">
-                    <!-- Right box content -->
-                    <p > I don't know what to put here yet. So while waiting, you might want to check out my 
-                        <a href="https://www.linkedin.com/in/mehmet-sahin-uces/" target="_blank" style="color: var(--primary-color)">LinkedIn</a> profile.
-                    </p>
-
+                    
                 </div>
             </div>
 
         </div>
 
     </div>
+
+    
 
     <!-- Picked Projects -->
     <div class="container mt-4">
         <div class="row justify-content-center">
             <div class="col-12 col-sm-12 col-md-12 col-lg-8">
-                <!-- compact box -->
-                <div class="compact-box d-flex align-items-center" style="background-color: #4f000bd6; color: white;">
-                    <div class="compact-image">
-                        <img src="https://placehold.co/80" alt="Placeholder Image">
-                    </div>
-                    <div class="compact-text ms-3">
-                        <h4>Compact Box Title</h4>
-                        <p>Short description for the compact box. This should be concise and to the point.</p>
-                    </div>
-                </div>
+                <h3> Picket Project/Game</h3>
+                <a class="box-link"  href="html/projects.html#0">
+                <div class="compact-box d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
+                   <div class="compact-text  ms-3">
+                       <h3 class="header-with-line projeButton">Cloud Comparisson Wep App</h3>
+                       <p>A web app that helps users compare cloud service prices easily by providing a centralized platform for selecting and customizing cloud solutions.</p> </div>
+                </div></a>
+                <a class="box-link"  href="html/games.html#1">
+                <div class="compact-box d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
+                    <div class="compact-text  ms-3">
+                        <h3 class="header-with-line projeButton">Breakthrough board game</h3>
+                        <p>It is Breakthrough board game made with pygame python. Game has basic AI to play with it. Player can start first or second.</p> </div>
+                 </div></a>
 
-                <div class="compact-box d-flex align-items-center mt-3"
-                    style="background-color: #cb680bcf; color: white;">
-                    <div class="compact-image">
-                        <img src="https://placehold.co/80" alt="Placeholder Image">
-                    </div>
-                    <div class="compact-text ms-3">
-                        <h4>Compact Box Title</h4>
-                        <p>Short description for the compact box. This should be concise and to the point.</p>
-                    </div>
-                </div>
-
-                <div class="compact-box d-flex align-items-center mt-3"
-                    style="background-color: #d63605cf; color: white;">
-                    <div class="compact-image">
-                        <img src="https://placehold.co/80" alt="Placeholder Image">
-                    </div>
-                    <div class="compact-text ms-3">
-                        <h4>Compact Box Title</h4>
-                        <p>Short description for the compact box. This should be concise and to the point.</p>
-                    </div>
-                </div>
+                <!-- <picture class="d-flex align-items-center">
+                    <source
+                      srcset="https://github-readme-stats.vercel.app/api?username=memo1918&show_icons=true"
+                      media="(prefers-color-scheme: light), (prefers-color-scheme: no-preference)"
+                    />
+                    <img src="https://github-readme-stats.vercel.app/api?username=memo1918&show_icons=true" />
+                </picture> -->
 
             </div>
         </div>
 
     </div>
 
+    
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+            <div class="col-12 col-lg-8 order-1 order-lg-2 mb-1">
+                <div class="compact-box d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
+                    <div class="compact-text justify-content-center ms-3">
+                        <h4 >Contact me</h4>
+                 </div>
+            </div>
+        </div>
+    </div>
 
-    <script src="../js/loadComponent.js"></script>
+
+
+
+    <footer id="footer" class="d-flex flex-wrap px-3 justify-content-between align-items-center py-3 my-2 ">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text ">Designed and built by Mehmet S. Uces</span>
+        </div>
+
+            
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://github.com/memo1918" target="_blank"><svg class="ic-github " width="50" height="50"></svg></a></li>
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://www.linkedin.com/in/mehmet-sahin-uces/" target="_blank"><svg class="ic-linkedin" width="50" height="50"></svg></a></li>
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://memo1918.itch.io" target="_blank"><svg class="ic-itchio" width="50" height="50"></svg></a></li>
+        </ul>
+    </footer>
+    
+    <script src="../js/index.js"></script>
 </body>
+
 
 </html>

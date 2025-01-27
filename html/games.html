@@ -17,32 +17,37 @@
 
 <body>
 
-    <nav id="NavButtonsContainer" class="navbar navbar-expand container mt-3 ">
-        <div class="container-fluid justify-content-star">
-
-            <div class="navbar-collapse">
-                <ul class="navbar-nav gap-3 justify-content-center mt-1">
+    <nav id="NavButtonsContainer" class="navbar navbar-expand">
+        <div class="container d-flex justify-content-center">
+            <ul class="navbar-nav gap-3 justify-content-center mt-1">
                 <!-- First Button -->
-                    <li class="nav-item   mb-2 ">
-                        <button class="nav-button btn btn-secondary" onclick="location.href='../index.html'">Home</button> 
-                    </li>
-                
-                    <!-- Second Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary" onclick="location.href='projects.html'">Projects</button>
-                    </li>
-                
-                    <!-- Third Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-primary" onclick="location.href='games.html'">Games</button> 
-                    </li>
-                
-                    <!-- Fourth Button -->
-                    <li class="nav-item  mb-2">
-                        <button class="nav-button btn btn-secondary" onclick="location.href='certificates.html'">Certificates</button> 
-                    </li>
-                </ul>
-            </div>
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='../index.html'">
+                        <span class="underline-anim">Home</span>
+                    </button>
+                </li>
+    
+                <!-- Second Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='projects.html'">
+                        <span class="underline-anim">Projects</span>
+                    </button>
+                </li>
+    
+                <!-- Third Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-primary" onclick="location.href='games.html'">
+                        <span class="underline-anim">Games</span>
+                    </button>
+                </li>
+    
+                <!-- Fourth Button -->
+                <li class="nav-item mb-2">
+                    <button class="nav-button btn btn-secondary" onclick="location.href='certificates.html'">
+                        <span class="underline-anim">Certificates</span>
+                    </button>
+                </li>
+            </ul>
         </div>
     </nav>
 
@@ -57,16 +62,16 @@
             </div>
         </div>
 
-        <div id="game-details" style="display: none;">
+        <div id="game-details"  style="display: none;">
             <div class="container">
                 <div class="row justify-content-center">
                     <div class="col-12 d-flex justify-content-start">
-                        <button id="back-button" class="btn btn-danger mb-3" onclick="location.href='games.html'">Back to Games</button> 
+                        <button id="back-button" class="btn btn-danger mb-3" onclick="location.href='games.html'"><span class="underline-anim">Back to Games </span></button> 
                     </div>
 
                     <div class="col-12 col-md-3 order-2 order-md-1 mb-1 ">
                         <div id="left-box" class="portfolio-box"
-                            style="display: none; background-color: #7c35decf; color: white; margin-top: 10px; padding: 20px; ">
+                            style="display: none; background-color: var(--background-color); color: var(--text-color); box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); margin-top: 10px; padding: 20px; ">
                             <!-- Left box content -->
                         </div>
                     </div>
@@ -74,13 +79,13 @@
                         <div id="game-iframe" class="d-flex justify-content-center">
                             <!-- JS loadProjectDetails() function fills this space -->
                         </div>
-                        <div id="bottom-box" class="portfolio-box mt-3">
+                        <div id="bottom-box" class="portfolio-box mt-3 ">
                             <!-- Bottom box content -->
                         </div>
                     </div>
                     <div class="col-12 col-md-3 order-3 order-md-3 mb-1">
                         <div id="right-box" class="portfolio-box"
-                            style="display: none; background-color: #cb680bcf; color: white; margin-top: 10px; padding: 20px;">
+                            style="display: none; background-color: var(--background-color); color: var(--text-color); box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1); margin-top: 10px; padding: 20px;">
                             <!-- Right box content -->
                         </div>
                     </div>
@@ -89,8 +94,19 @@
         </div>
     </div>
 
+    <footer id="footer" class="d-flex flex-wrap px-3 justify-content-between align-items-center py-3 my-2 ">
+        <div class="col-md-4 d-flex align-items-center">
+            <span class="mb-3 mb-md-0 text ">Designed and built by Mehmet S. Uces</span>
+        </div>
+    
+        <ul class="nav col-md-4 justify-content-end list-unstyled d-flex ">
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://github.com/memo1918" target="_blank"><svg class="ic-github " width="50" height="50"></svg></a></li>
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://www.linkedin.com/in/mehmet-sahin-uces/" target="_blank"><svg class="ic-linkedin" width="50" height="50"></svg></a></li>
+            <li class="ms-3 icons"><a class="text-body-secondary" href="https://memo1918.itch.io" target="_blank"><svg class="ic-itchio" width="50" height="50"></svg></a></li>
+        </ul>
+    </footer>
+
     <script src="../js/games.js"></script>
-    <script src="../js/loadComponent.js"></script>
 </body>
 
 </html>

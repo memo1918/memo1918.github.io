@@ -4,8 +4,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const projectContent = document.getElementById('project-content');
     const backButton = document.getElementById('back-button');
 
-    const colors = ["#cb680bcf","#7c35decf","#d63605cf","#2ec4b5dc"];
-
     let projects = {};
 
     function loadProjects() {
@@ -41,18 +39,18 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createProjectCard(index, project) {
-        const color = colors[index % colors.length];
         return `
-                <div class="compact-box d-flex align-items-center mt-3" style="background-color: ${color}; color: white;">
-                    <div class="compact-image">
-                        <img src="${project.image}" alt="Placeholder Image" "> </div>
-                    <div class="compact-text ms-3">
-                        <h3>${project.title}</h3>
-                        <p>${project.description}</p> </div>
-                    <div class="compact-button d-grid col-8 col-sm-8 col-md-1 col-lg-1  justify-content-md-end">
-                        <button class="btn btn-warning" onclick="location.href='#${index}'">Project Details</button>
-                    </div>
-                </div>`;
+                <a class="box-link"  href="#${index}">
+                <div class="compact-box d-flex align-items-center mt-3 " style="background-color: var(--background-color); color: var(--text-color);">
+                 <!--
+                 <div class="compact-image">
+                    <img src="${project.image}" alt="Placeholder Image" "> </div>    
+                    -->
+                <div class="compact-text  ms-3">
+                    <h3 class="header-with-line projeButton">${project.title}</h3>
+                    <p>${project.description}</p> </div>
+
+                </div> </a>`;
     }
 
     function initializePage() {
@@ -76,7 +74,7 @@ document.addEventListener('DOMContentLoaded', function() {
             showProjectList();
         }
 
-        // Generate project cards
+
         // Generate project cards
         projects.forEach((project, index) => {
             projectList.innerHTML += createProjectCard(index, project);

@@ -6,9 +6,6 @@ document.addEventListener('DOMContentLoaded', function() {
     const rightBox = document.getElementById('right-box');
     const bottomBox = document.getElementById('bottom-box');
 
-
-    const colors = ["#cb680bcf","#7c35decf","#d63605cf","#2ec4b5dc"];
-
     let games = {};
 
     function loadGames() {
@@ -50,23 +47,21 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     function createGameCard(index, game) {
-        const color = colors[index % colors.length];
         let title = game.title;
         if (game.iframe){
             title = `${game.title} <br><small style=\"font-style:italic;\">Play in browser</small>`;
         }
 
         return `
-            <div class="compact-box d-flex align-items-center mt-3" style="background-color: ${color}; color: white;">
-                <div class="compact-image">
-                    <img src="${game.image}" alt="Placeholder Image" "> </div>
+            <a class="box-link"  href="#${index}">
+            <div class="compact-box d-flex align-items-center mt-3"">
+                <!-- <div class="compact-image">
+                    <img src="${game.image}" alt="Placeholder Image" "> </div> -->
                 <div class="compact-text ms-3">
-                    <h3>${title}</h3>
+                    <h3 class="header-with-line projeButton">${title}</h3>
                     <p>${game.description}</p> </div>
-                <div class="compact-button d-grid col-8 col-sm-8 col-md-1 col-lg-1  justify-content-md-end">
-                    <button class="btn btn-warning" onclick="location.href='#${index}'" >Game Details</button>
-                </div>
-            </div>`;
+            </div>
+            </a>`;
     }
 
     function initializePage() {

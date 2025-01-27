@@ -12,7 +12,7 @@
             "link":"https://github.com/memo1918/GameOfLife"
         },
         {
-            "title": " Breakthrough board game",
+            "title": "Breakthrough board game",
             "description": "It is Breakthrough board game made with pygame python. Game has basic AI to play with it. Player can start first or second.",
             "details": "This game is about...",
             "image": "../images/games/brekthrough.webp",

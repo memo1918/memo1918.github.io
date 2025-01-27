@@ -1,73 +1,38 @@
 @import url('variables.css');
 
 .btn-primary {
-    background-color: var(--primary-color) !important;
-    color: #fff !important;
+    color: var(--text-color) !important;
     border: none !important;
     outline: none !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-
 }
 
-.btn-primary:hover {
-    background-color: var(--primary-color-hover) !important;
-}
 
-.btn-primary:active, .btn-primary:focus {
-    background-color: var(--primary-color-active) !important;
-}
 
 .btn-secondary {
-    background-color: var(--grey-button) !important;
     border: none !important;
     color: #000000 !important;
     outline: none !important;
-    backdrop-filter: blur(4px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 }
 
-.btn-secondary:hover {
-    background-color: var(--grey-button-hover) !important;
-}
-
-.btn-secondary:active, .btn-secondary:focus {
-    background-color: var(--grey-button-active) !important;
-}
 
 .btn-danger{
-    background-color: var(--secondary-color) !important;
+    color: var(--text-color) !important;
     border: none !important;
-    color: #fff !important;
     outline: none !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    height: auto;
+
+    background-color: var(--background-color) !important;
+    font-size: large !important;
+    font-weight: 800 !important;
 }
 
-.btn-danger:hover {
-    background-color: var(--secondary-color-hover) !important;
+.card img{
+    transition: all 0.25s;
 }
 
-.btn-danger:active, .btn-danger:focus {
-    background-color: var(--secondary-color-active) !important;
+.card img:hover {
+    transform: scale(0.9);
+
 }
 
-.btn-warning{
-    background-color: var(--button-warning-color) !important;
-    border: none !important;
-    color: black !important;
-    outline: none !important;
-    backdrop-filter: blur(10px);
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
-}
-.btn-warning:hover {
-    background-color: var(--button-warning-color-hover) !important;
-}
-.btn-warning:active, .btn-warning:focus {
-    background-color: var(--button-warning-color-active) !important;
-}
-
-.accordion-button::after {
-    background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%23ffffff'><path fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/></svg>") !important;
- }
