@@ -10,18 +10,9 @@
             "link":"https://github.com/memo1918/Cloud-Seeker"
         },
         {
-            "title": "Real Time Rgb Camera Parameters Tuning For Tree Saplings Visual Analysis",
-            "description": "Developed a software prototype for real-time RGB camera tuning, optimizing exposure and white balance for greenhouse automation (Thesis).",
-            "details": "This thesis explores the development of a software prototype for real-time tuning of RGB camera parameters, addressing challenges posed by changing environmental conditions in greenhouse automation. The project focuses on optimizing exposure and white balance to enhance image quality for machine vision applications in plant monitoring. Beginning with a detailed review of digital camera principles, the thesis examines the impact of light variability on image acquisition and evaluates algorithms for dynamic parameter adjustment. <br><br> A gain control algorithm was fully implemented, while a grey-edge white balance algorithm was partially developed. The project involved a deep analysis of vision systems and light, and the developed algorithms were successful, performing on par with built-in solutions of the camera. <br><br> Experiments demonstrated promising results, particularly for gain control, though oscillations and incomplete white balance integration highlight areas for improvement. Recommendations include further tuning in controlled and deployment environments to ensure robust and reliable performance in real-world scenarios. <br><br> <object data=\"../data/Thesis.pdf\" type=\"application/pdf\" width=\"100%\" height=\"500px\"> <p>Your web browser doesn't have a PDF plugin. <a href=\"../data/Thesis.pdf\">click here to download the PDF file.</a></p> </object>" ,
-            "image": "../images/projects/ThesisFigures.webp",
-            "images":[],
-            "link":"https://github.com/memo1918/GainControl-and-GreyEdge"
-            
-        },
-        {
             "title": "Ansible Automation for Zabbix Agent Installation",
             "description": "Ansible playbooks and Python script to quickly set up Zabbix agents and add them to your Zabbix server.",
-            "details": "This project automates the installation and configuration of Zabbix agents on various systems and adds hosts to a Zabbix server using Ansible playbooks and a Python script. The automation ensures that the Zabbix agents are correctly installed and configured on target systems, and the hosts are registered in the Zabbix server for monitoring.<br><br> The automation of Zabbix agent installation and host registration ensures consistency, efficiency, and scalability in deployment processes. It reduces the time and effort required for setup, minimizes human errors, and allows for quick scaling across numerous systems. This leads to improved system reliability, reduced downtime, and simplified management, enabling IT teams to focus on more strategic tasks. ",
+            "details": "../data/details/projects/ansiblezabbix.html",
             "image": "../images/projects/ansiblezabbix.webp",
             "images":[],
             "link":"https://github.com/memo1918/zabbix-agent-ansible-automation"
@@ -33,6 +24,15 @@
             "image": "../images/projects/awsterraform.webp",
             "images":[],
             "link":"https://github.com/memo1918/AWS-Terraform-HA-infra"
+        },
+        {
+            "title": "Real Time Rgb Camera Parameters Tuning For Tree Saplings Visual Analysis",
+            "description": "Developed a software prototype for real-time RGB camera tuning, optimizing exposure and white balance for greenhouse automation (Thesis).",
+            "details": "This thesis explores the development of a software prototype for real-time tuning of RGB camera parameters, addressing challenges posed by changing environmental conditions in greenhouse automation. The project focuses on optimizing exposure and white balance to enhance image quality for machine vision applications in plant monitoring. Beginning with a detailed review of digital camera principles, the thesis examines the impact of light variability on image acquisition and evaluates algorithms for dynamic parameter adjustment. <br><br> A gain control algorithm was fully implemented, while a grey-edge white balance algorithm was partially developed. The project involved a deep analysis of vision systems and light, and the developed algorithms were successful, performing on par with built-in solutions of the camera. <br><br> Experiments demonstrated promising results, particularly for gain control, though oscillations and incomplete white balance integration highlight areas for improvement. Recommendations include further tuning in controlled and deployment environments to ensure robust and reliable performance in real-world scenarios. <br><br> <object data=\"../data/Thesis.pdf\" type=\"application/pdf\" width=\"100%\" height=\"500px\"> <p>Your web browser doesn't have a PDF plugin. <a href=\"../data/Thesis.pdf\">click here to download the PDF file.</a></p> </object>" ,
+            "image": "../images/projects/ThesisFigures.webp",
+            "images":[],
+            "link":"https://github.com/memo1918/GainControl-and-GreyEdge"
+            
         },
         {
             "title": "Guitar Transmitter",
