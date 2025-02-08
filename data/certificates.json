@@ -6,11 +6,6 @@
             "image": "../images/certificates/aws-cloud.webp"
         },
         {
-            "title": "AWS Cloud Practitioner-Discovery Day",
-            "description": "Attended a training event covering the benefits of AWS Cloud computing and key services for compute, storage, databases, networking, and content delivery.",
-            "image": "../images/certificates/aws-cloud-practitioner.webp"
-        },
-        {
             "title": "NDG Linux Essentials",
             "description": "Completed the NDG Linux Essentials course, showcasing foundational knowledge of the Linux operating system, command-line navigation, security, file permissions, and system management.",
             "image": "../images/certificates/Linux Essent-certificate.webp"
@@ -21,9 +16,19 @@
             "image": "../images/certificates/Python.webp"
         },
         {
+            "title": "CISCO Networking Devices and Initial Configuration",
+            "description": "Completed a networking course covering essential network device configuration, IP addressing, and foundational concepts in cloud and virtualization",
+            "image": "../images/certificates/NetworkingDevices.webp"
+        },
+        {
             "title": "Unity Game Development",
             "description": "Completed a course on Unity game development, covering the basics of the engine and creating a 2D game to apply and solidify foundational skills.",
             "image": "../images/certificates/Unity.webp"
+        },
+        {
+            "title": "AWS Cloud Practitioner-Discovery Day",
+            "description": "Attended a training event covering the benefits of AWS Cloud computing and key services for compute, storage, databases, networking, and content delivery.",
+            "image": "../images/certificates/aws-cloud-practitioner.webp"
         },
         {
             "title": "Lightroom Photo Editing",
