@@ -1,17 +1,6 @@
 {
     "games": [ 
         {
-            "title": "Game of Life ",
-            "description": "Simple version of Conway's Game of Life made with python using pygame.",
-            "details": "Simple version of Conway's Game of Life made with python using pygame.",
-            "image": "../images/games/gameoflife.webp",
-            "images":[],
-            "rules": "A cell can be live or dead. Each cell interracts with its eight neighbors around. At each step following rules apply: <br /><br /> 1.Any live cell with fewer than two live neighbors dies, as if by underpopulation. <br /><br /> 2.Any live cell with two or three live neighbors lives on to the next generation. <br /><br /> 3.Any live cell with more than three live neighbors dies, as if by overpopulation. <br /><br /> 3.Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.",
-            "howto": "Game starts as paused. you can start and stop the game with \"space\" key. <br /><br /> Clicking on tiles places a live cell. You can also click and move the mouse to place along the way.<br /><br /> Pressing \"ESC\" clears the grid.",
-            "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12384765?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\" ><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>",
-            "link":"https://github.com/memo1918/GameOfLife"
-        },
-        {
             "title": "Breakthrough board game",
             "description": "It is Breakthrough board game made with pygame python. Game has basic AI to play with it. Player can start first or second.",
             "details": "../data/details/games/breakthrough.html",
@@ -22,6 +11,17 @@
             "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12262804?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\"><a href=\"https://memo1918.itch.io/breakthrough-board-game\">Play Breakthrough-board-game on itch.io</a></iframe>",
             "link":"https://github.com/memo1918/Breakthrough-board-game"
             
+        },
+        {
+            "title": "Game of Life ",
+            "description": "Simple version of Conway's Game of Life made with python using pygame.",
+            "details": "Simple version of Conway's Game of Life made with python using pygame.",
+            "image": "../images/games/gameoflife.webp",
+            "images":[],
+            "rules": "A cell can be live or dead. Each cell interracts with its eight neighbors around. At each step following rules apply: <br /><br /> 1.Any live cell with fewer than two live neighbors dies, as if by underpopulation. <br /><br /> 2.Any live cell with two or three live neighbors lives on to the next generation. <br /><br /> 3.Any live cell with more than three live neighbors dies, as if by overpopulation. <br /><br /> 3.Any dead cell with exactly three live neighbors becomes a live cell, as if by reproduction.",
+            "howto": "Game starts as paused. you can start and stop the game with \"space\" key. <br /><br /> Clicking on tiles places a live cell. You can also click and move the mouse to place along the way.<br /><br /> Pressing \"ESC\" clears the grid.",
+            "iframe": "<iframe frameborder=\"0\" src=\"https://itch.io/embed-upload/12384765?color=000000\" allowfullscreen=\"\" width=\"\" height=\"\" ><a href=\"https://memo1918.itch.io/gameoflife\">Play GameOfLife on itch.io</a></iframe>",
+            "link":"https://github.com/memo1918/GameOfLife"
         },
         {
             "title": "Historia",
