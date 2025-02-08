@@ -1,0 +1,51 @@
+<p>This project is a digital implementation of the Breakthrough board game, developed using Python and the Pygame library. 
+    The game features a basic AI opponent, allowing players to choose whether to play first or second.
+</p>
+<br>
+
+<h3 class="subhead">Core Functions</h3>
+<p>
+    <ul>
+        <li>Turn based game with AI as opponent.</li>
+        <li>Customizable window size, board size, and AI search depth.</li>
+        <li>Highlighted potential moves when selecting a piece. </li>
+        <li>Win and lose conditions and ability to restart the game.</li>
+    </ul>
+
+</p>
+<br>
+
+<h3 class="subhead">Technologies and Concepts</h3>
+<p>
+    While Python is versatile and easy to use, Pygame provides essential functionalities such as window creation, input handling, and rendering. 
+    This makes them a perfect choice for developing simple 2D games.
+    <br><br>
+    The game follows <u>OOP</u> principles, with separate classes for core elements like the 'Board', 'Squares', 'Pieces', and 'AI'. 
+    This structured approach makes the code highly reusable—to the point that I have used this game as a template for developing other games.
+    <br><br>
+    The AI is implemented using the <u>Minimax</u> algorithm with a <u>heuristic function</u> to evaluate board states, enabling it to make strategic decisions.
+</p>
+<br>
+
+<h3 class="subhead">Development</h3>
+<p>
+    I started making the game as for two person to play withouth AI. 
+    However, I always kept AI integration in mind and ensured that the game logic was flexible enough to accommodate it.
+    <br><br>
+    The first version of the AI used a simple <u>one-step lookahead</u> approach, evaluating only the current board state to decide on a move.
+    <br><br>
+    Implementing an <u>N-step lookahead</u> required the <u>Minimax</u> algorithm, which was challenging on its own. 
+    Fine-tuning the heuristic function added another layer of complexity, and it took 
+    two full revisions to finalize a working AI that could make strategic decisions.
+</p>
+<br>
+
+<h3 class="subhead">Potential Future Plans</h3>
+<p>
+    Currently, increasing the board size or AI search depth significantly slows down decision-making.  
+    <br><br>
+    A potential solution is to implement optimization techniques such as <u>Alpha-Beta Pruning</u> to improve the efficiency of the Minimax algorithm.  
+    <br><br>
+    Additionally, integrating different AI algorithms could provide a comparison of different algorithms.
+</p>
+<br>

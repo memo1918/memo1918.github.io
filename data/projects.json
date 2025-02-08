@@ -4,7 +4,7 @@
 
             "title": "Cloud Comparisson Wep App",
             "description": "A web app that helps users compare cloud service prices easily by providing a centralized platform for selecting and customizing cloud solutions.",
-            "details": "../data/details/cloudseeker.html",
+            "details": "../data/details/projects/cloudseeker.html",
             "image": "../images/projects/cloud-seeker.webp",
             "images":["../images/projects/cloudseeker/home_page.png","../images/projects/cloudseeker/services.png","../images/projects/cloudseeker/shopping_cart.png","../images/projects/cloudseeker/service_configuration.png"],
             "link":"https://github.com/memo1918/Cloud-Seeker"

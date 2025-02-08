@@ -14,7 +14,7 @@
         {
             "title": "Breakthrough board game",
             "description": "It is Breakthrough board game made with pygame python. Game has basic AI to play with it. Player can start first or second.",
-            "details": "This game is about...",
+            "details": "../data/details/games/breakthrough.html",
             "image": "../images/games/brekthrough.webp",
             "images":[],
             "rules":"Each player moves one piece per turn.<br><br>If the target position is empty, a piece can be moved one space forward or diagonally forward. <br><br> A piece may be also moved to a square occupied by an enemy piece, if the target position is one space diagonally forward.<br><br>The game ends if one player reaches opponent's home row.",

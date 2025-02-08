@@ -34,10 +34,33 @@ document.addEventListener('DOMContentLoaded', function() {
                 rightBox.style.display = 'block';
             }
             
-            bottomBox.innerHTML = `<h3>${game.title}</h3> <small>${game.description}</small> <br><br><br><br>  <p>${game.details}</p> <a href="${game.link}" target="_blank" rel="noopener noreferrer" style="bottom:0px;">Game Link</a>`;
-            gameList.style.display = 'none';
-            gameDetails.style.display = 'block';
+            let detailsContent = '';
+            if (game.details && game.details.endsWith('.html')) {
+                fetch(game.details)
+                    .then(response => response.text())
+                    .then(htmlContent => {
+                        detailsContent = htmlContent;
+                        updateGameContent(game, detailsContent);
+                    })
+                    .catch(error => {
+                        console.error('Error loading game details:', error);
+                    });
+            } else {
+                detailsContent = `<p>${game.details}</p>`;
+                updateGameContent(game, detailsContent);
+            }
         }
+    }
+
+    function updateGameContent(game, detailsContent) {
+        bottomBox.innerHTML = `
+            <h2>${game.title}</h2>
+            <br>
+            <div class="text">${detailsContent}
+            <a href="${game.link}" target="_blank" rel="noopener noreferrer" style="bottom:0px;">Game Link</a></div>
+        `;
+        gameList.style.display = 'none';
+        gameDetails.style.display = 'block';
     }
 
     // takes back to the project list
