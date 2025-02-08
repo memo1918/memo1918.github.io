@@ -21,16 +21,54 @@ document.addEventListener('DOMContentLoaded', function() {
         const project = projects[index];
         if (project) {
             // Populate project details
-            projectContent.innerHTML = `
-                <h1>${project.title}</h1>
-                <br><br>
-                <div class="text"><p>${project.details}</p>
-                <a href="${project.link}" target="_blank" rel="noopener noreferrer" style="bottom:0px;">Project Link</a></div>
-            `;
-            projectList.style.display = 'none';
-            projectDetails.style.display = 'block';
+            let detailsContent = '';
+            if (project.details.endsWith('.html')) {
+                fetch(project.details)
+                    .then(response => response.text())
+                    .then(htmlContent => {
+                        detailsContent = htmlContent;
+                        updateProjectContent(project, detailsContent);
+                    })
+                    .catch(error => {
+                        console.error('Error loading project details:', error);
+                    });
+            } else {
+                detailsContent = `<p>${project.details}</p>`;
+                updateProjectContent(project, detailsContent);
+            }
+
+            function updateProjectContent(project, detailsContent) {
+                projectContent.innerHTML = `
+                    <h1>${project.title}</h1>
+                    <br><br>
+                    <div class="text">${detailsContent}
+                    <a href="${project.link}" target="_blank" rel="noopener noreferrer" style="bottom:0px;">Project Link</a></div>
+                    <br><br>
+                    <div id="images"></div>
+                `;
+                const imageContainer = document.getElementById("images");
+                if (project.images && project.images.length > 0) {
+                    // const imageContainer = document.createElement('div');
+                    // const imageContainer = projectContent.innerHTML.getElementById("images");
+                    project.images.forEach(image => {
+                        const imgElement = document.createElement('img');
+                        // imgElement.className = 'project-image';
+                        imgElement.style.width = '100%';
+
+                        imgElement.src = image;
+                        imgElement.alt = project.title;
+                        imageContainer.appendChild(imgElement);
+                        // imageContainer.innerHTML += '<br><br>';
+                    });
+                    // projectContent.appendChild(imageContainer);
+                }
+
+                projectList.style.display = 'none';
+                projectDetails.style.display = 'block';
+            }
         }
     }
+    
 
     // takes back to the project list
     function showProjectList() {

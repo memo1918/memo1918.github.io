@@ -4,9 +4,9 @@
 
             "title": "Cloud Comparisson Wep App",
             "description": "A web app that helps users compare cloud service prices easily by providing a centralized platform for selecting and customizing cloud solutions.",
-            "details": "Our Cloud Price Comparison web app simplifies the process of choosing cloud services for both individuals and businesses. Designed as an open-source tool, it allows users to filter, select, and customize cloud solutions based on their needs. Unlike manually comparing pricing PDFs or using provider-specific tools, our app integrates APIs to fetch up-to-date pricing, ensuring users get accurate and transparent cost estimates.",
+            "details": "../data/details/cloudseeker.html",
             "image": "../images/projects/cloud-seeker.webp",
-            "images":[],
+            "images":["../images/projects/cloudseeker/home_page.png","../images/projects/cloudseeker/services.png","../images/projects/cloudseeker/shopping_cart.png","../images/projects/cloudseeker/service_configuration.png"],
             "link":"https://github.com/memo1918/Cloud-Seeker"
         },
         {
