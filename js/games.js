@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     function updateGameContent(game, detailsContent) {
         bottomBox.innerHTML = `
-            <h2>${game.title}</h2>
+            <h1>${game.title}</h1>
             <br>
             <div class="text">${detailsContent}
             <a href="${game.link}" target="_blank" rel="noopener noreferrer" style="bottom:0px;">Game Link</a></div>
